@@ -3,4 +3,4 @@ The official code for the paper ["Delving Deep into Label Smoothing"](https://ar
 Coming Soon.
 
 ## Other realated implementation
-Thanks to the re-implementation in [""](https://github.com/Kurumi233/OnlineLabelSmoothing).
+Thanks to the re-implementation in [](https://github.com/Kurumi233/OnlineLabelSmoothing).
