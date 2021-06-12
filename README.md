@@ -9,7 +9,8 @@ So if there are any bugs, please feel easy to contact me (zhangchbin AATT gmail 
 ## Classification for fine-grained datasets
 ![avatar](imgs/fine-cls.png)
 
-## Other
+## Performance of model ensemble on CIFAR-100
+![avatar](imgs/ensemble.png)
 
 
 # TODO
