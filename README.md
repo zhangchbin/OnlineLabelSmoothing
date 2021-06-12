@@ -9,7 +9,7 @@ So if there are any bugs, please feel easy to contact me (zhangchbin AATT gmail 
 ## Classification for fine-grained datasets
 ![avatar](imgs/fine-cls.png)
 
-## Performance of model ensemble on CIFAR-100
+## Model ensemble on CIFAR-100
 ![avatar](imgs/ensemble.png)
 
 
@@ -39,10 +39,10 @@ SAN_network
 # Data Preparation
 I will updated the download link and the file directory of all datasets soon.
 
-# train and validate
+# Train and Validate
 1. download the ImageNet pretrained model to ```checkpoint```  
    [MobileNet-v2](https://download.pytorch.org/models/mobilenet_v2-b0353104.pth), [ResNet-50](https://download.pytorch.org/models/resnet50-19c8e357.pth), [Res2Net](https://shanghuagao.oss-cn-beijing.aliyuncs.com/res2net/res2net50_26w_8s-2c7c9f12.pth)
-2. download all data to the ```data``` dir
+2. download all datasets to the ```data``` dir
 3. train the model with online label smoothing:  
     ```
     CUDA_VISIBLE_DEVICES=1 python main.py \
