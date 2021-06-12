@@ -3,6 +3,14 @@ The code for the paper ["Delving Deep into Label Smoothing"](https://arxiv.org/p
 I have only cleaned the code on the fine-grained datasets.
 Since I am not currently in school, I have not tested it.
 So if there are any bugs, please feel easy to contact me (zhangchbin AATT gmail Ddot com).
+![avatar](imgs/pipeline.png)
+
+# Performance
+## Classification for fine-grained datasets
+![avatar](imgs/fine-cls.png)
+
+## Other
+
 
 # TODO
 - training scripts for more network and datasets
@@ -47,7 +55,7 @@ I will updated the download link and the file directory of all datasets soon.
 	--batch_size 64 \
     ```
   
-    test the model ensemble performance:
+    (optional) test the model ensemble performance:
     ```
     python main.py \
 	--mode ensemble \
