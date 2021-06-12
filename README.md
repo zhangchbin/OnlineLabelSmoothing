@@ -40,9 +40,9 @@ SAN_network
 I will updated the download link and the file directory of all datasets soon.
 
 # train and validate
-1. download the ImageNet pretrained model to ```checkpoint```
+1. download the ImageNet pretrained model to ```checkpoint```  
    [MobileNet-v2](https://download.pytorch.org/models/mobilenet_v2-b0353104.pth), [ResNet-50](https://download.pytorch.org/models/resnet50-19c8e357.pth), [Res2Net](https://shanghuagao.oss-cn-beijing.aliyuncs.com/res2net/res2net50_26w_8s-2c7c9f12.pth)
-2. Download all data to the ```data``` dir
+2. download all data to the ```data``` dir
 3. train the model with online label smoothing:  
     ```
     CUDA_VISIBLE_DEVICES=1 python main.py \
