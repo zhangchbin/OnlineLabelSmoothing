@@ -24,156 +24,6 @@ import torch.nn.functional as F
 import numpy as np
 
 
-class h_sigmoid(nn.Module):
-    def __init__(self, inplace=True):
-        super(h_sigmoid, self).__init__()
-        self.relu = nn.ReLU6(inplace=inplace)
-
-    def forward(self, x):
-        return self.relu(x + 3) / 6
-
-class h_swish(nn.Module):
-    def __init__(self, inplace=True):
-        super(h_swish, self).__init__()
-        self.sigmoid = h_sigmoid(inplace=inplace)
-
-    def forward(self, x):
-        return x * self.sigmoid(x)
-
-class CoordAtt(nn.Module):
-    def __init__(self, inp, oup, reduction=32):
-        super(CoordAtt, self).__init__()
-        self.pool_h = nn.AdaptiveAvgPool2d((None, 1))
-        self.pool_w = nn.AdaptiveAvgPool2d((1, None))
-
-        mip = max(8, inp // reduction)
-
-        self.conv1 = nn.Conv2d(inp, mip, kernel_size=1, stride=1, padding=0)
-        self.bn1 = nn.BatchNorm2d(mip)
-        self.act = h_swish()
-        
-        self.conv_h = nn.Conv2d(mip, oup, kernel_size=1, stride=1, padding=0)
-        self.conv_w = nn.Conv2d(mip, oup, kernel_size=1, stride=1, padding=0)
-        
-
-    def forward(self, x):
-        identity = x
-        
-        n,c,h,w = x.size()
-        x_h = self.pool_h(x)
-        x_w = self.pool_w(x).permute(0, 1, 3, 2)
-
-        y = torch.cat([x_h, x_w], dim=2)
-        y = self.conv1(y)
-        y = self.bn1(y)
-        y = self.act(y) 
-        
-        x_h, x_w = torch.split(y, [h, w], dim=2)
-        x_w = x_w.permute(0, 1, 3, 2)
-
-        a_h = self.conv_h(x_h).sigmoid()
-        a_w = self.conv_w(x_w).sigmoid()
-
-        out = a_w * a_h
-
-        return out
-
-def get_rot_mat(theta):
-    theta = torch.tensor(theta)
-    return torch.tensor([[torch.cos(theta), -torch.sin(theta), 0],
-                         [torch.sin(theta), torch.cos(theta), 0]])
-
-
-def rot_img(x, theta, dtype=torch.float32):
-    rot_mat = get_rot_mat(theta)[None, ...].type(dtype).to(x.device).repeat(x.shape[0],1,1)
-    grid = F.affine_grid(rot_mat, x.size(), align_corners=True)
-    x = F.grid_sample(x, grid)
-    return x
-
-class CCpool(nn.Module):
-    def __init__(self, in_channels):
-        super().__init__()
-        self.bn = nn.BatchNorm2d(in_channels)
-        self.conv1 = nn.Conv2d(in_channels, in_channels, 1, 1)
-        self.conv2 = nn.Conv2d(in_channels, in_channels, 1, 1)
-        self.bn = nn.BatchNorm2d(in_channels)
-    '''def forward(self, x):
-        h, w = x.shape[2:]
-        x1 = F.adaptive_avg_pool2d(x, (h, 1))
-        x2 = F.adaptive_avg_pool2d(x, (1, w))
-        x2 = x2.permute(0, 1, 3, 2) #[n,c,w, 1]
-        x3 = torch.cat([x1, x2], dim=2) #[n,c,(h+w), 1]
-        x3 = self.bn(x3)
-        x1 = x3[:, :, :h, :]
-        x2 = x3[:, :, h:, :].permute(0, 1, 3, 2) #[n,c,1, w]
-        return torch.sigmoid(x1) * x1 + torch.sigmoid(x2) * x2
-    '''
-        
-        
-    def forward(self, x):
-        h, w = x.shape[2:]
-        x1 = F.adaptive_avg_pool2d(x, (h, 1))
-        x2 = F.adaptive_avg_pool2d(x, (1, w))
-        x1 = self.conv1(x1)
-        x2 = self.conv2(x2)
-        out = x1 * torch.sigmoid(x1) + x2 * torch.sigmoid(x2)
-        out = self.bn(out)
-        out = F.relu(out)
-        return out
-        #return torch.sigmoid(x1) * torch.sigmoid(x2)
-
-class RotAttention(nn.Module):
-    def __init__(self, in_channels):
-        super().__init__()
-        self.conv1 = nn.Conv2d(in_channels, in_channels//8, 1)
-        
-        self.cp1 = CCpool(in_channels//32)
-        self.cp2 = CCpool(in_channels//32)
-        self.cp3 = CCpool(in_channels//32)
-        self.cp4 = CCpool(in_channels//32)
-        
-        self.conv2 = nn.Conv2d(in_channels//8, in_channels, 1, 1)
-        self.bn = nn.BatchNorm2d(in_channels)
-   
-    def forward(self, x):
-        h, w = x.shape[2:]
-        x = self.conv1(x)
-        x1, x2, x3, x4 = torch.split(x, x.shape[1]//4, dim=1)
-        
-        x1 = F.pad(x1, (w//5, w//5, h//5, h//5))
-        x2 = F.pad(x2, (w//5, w//5, h//5, h//5))
-        x3 = F.pad(x3, (w//5, w//5, h//5, h//5))
-        x4 = F.pad(x4, (w//5, w//5, h//5, h//5))
-        
-        x1 = rot_img(x1, np.pi/(8.*1.))
-        x2 = rot_img(x2, np.pi/(8.*2.))
-        x3 = rot_img(x3, np.pi/(8.*3.))
-        x4 = rot_img(x4, np.pi/(8.*4.))
-        
-        x1 = self.cp1(x1)
-        x2 = self.cp2(x2)
-        x3 = self.cp3(x3)
-        x4 = self.cp4(x4)
-        
-        x1 = rot_img(x1, -np.pi/(8.*1.))
-        x2 = rot_img(x2, -np.pi/(8.*2.))
-        x3 = rot_img(x3, -np.pi/(8.*3.))
-        x4 = rot_img(x4, -np.pi/(8.*4.))
-        
-        #x1 = x1[:, :, h//5:h//5+h, w//5:w//5+w]
-        #x2 = x2[:, :, h//5:h//5+h, w//5:w//5+w]
-        #x3 = x3[:, :, h//5:h//5+h, w//5:w//5+w]
-        #x4 = x4[:, :, h//5:h//5+h, w//5:w//5+w]
-        x1 = F.adaptive_avg_pool2d(x1, (h, w))
-        x2 = F.adaptive_avg_pool2d(x2, (h, w))
-        x3 = F.adaptive_avg_pool2d(x3, (h, w))
-        x4 = F.adaptive_avg_pool2d(x4, (h, w))
-        
-        x = torch.cat([x1, x2, x3,x4], dim=1)
-        x = self.conv2(x)
-        x = torch.sigmoid(x)
-        return x
-
         
 
 def conv3x3(in_planes, out_planes, stride=1, groups=1, dilation=1):
@@ -246,8 +96,6 @@ class Bottleneck(nn.Module):
         self.downsample = downsample
         self.stride = stride
         
-        self.att = RotAttention(width) #att
-#        self.att = CoordAtt(width, width)
 
     def forward(self, x):
         identity = x
@@ -256,11 +104,9 @@ class Bottleneck(nn.Module):
         out = self.bn1(out)
         out = self.relu(out)
 
-        out = self.conv2(out) #att
+        out = self.conv2(out)
         
         out = self.bn2(out)
-        attention = self.att(out)
-        out = attention * out
         
         out = self.relu(out)
 
