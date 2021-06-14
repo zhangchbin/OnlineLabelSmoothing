@@ -14,6 +14,7 @@ So if there are any bugs, please feel easy to contact me (zhangchbin AATT gmail 
 
 
 # TODO
+- supporting for Jittor
 - training scripts for more network and datasets
 - EfficientNet for fine-grained classification
 - SAN network for fine-grained classification
