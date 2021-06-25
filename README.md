@@ -5,6 +5,27 @@ Since I am not currently in school, I have not tested it.
 So if there are any bugs, please feel easy to contact me (zhangchbin AATT gmail Ddot com).
 ![avatar](imgs/pipeline.png)
 
+# Cite
+```
+@ARTICLE{zhang2021delving,
+
+  author={Zhang, Chang-Bin and Jiang, Peng-Tao and Hou, Qibin and Wei, Yunchao and Han, Qi and Li, Zhen and Cheng, Ming-Ming},
+
+  journal={IEEE Transactions on Image Processing}, 
+
+  title={Delving Deep into Label Smoothing}, 
+
+  year={2021},
+
+  volume={},
+
+  number={},
+
+  pages={1-1},
+
+  doi={10.1109/TIP.2021.3089942}}
+```
+
 # Performance
 ## Classification for fine-grained datasets
 ![avatar](imgs/fine-cls.png)
