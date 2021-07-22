@@ -84,4 +84,4 @@ I will updated the download link and the file directory of all datasets soon.
     ```
 
 ## Other realated implementation
-Thanks to the re-implementation in [code](https://github.com/Kurumi233/OnlineLabelSmoothing) and [code](https://github.com/ankandrew/online-label-smoothing-pt)
+Thanks to the re-implementation in [Kurumi233](https://github.com/Kurumi233/OnlineLabelSmoothing) and [ankandrew](https://github.com/ankandrew/online-label-smoothing-pt)
