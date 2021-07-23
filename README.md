@@ -1,20 +1,20 @@
 # Online Label Smoothing
-The code for the paper ["Delving Deep into Label Smoothing"](https://arxiv.org/pdf/2011.12562.pdf)  
+The code for the paper ["Delving Deep into Label Smoothing"](https://arxiv.org/abs/2011.12562)  
 I have only cleaned the code on the fine-grained datasets.
 Since I am not currently in school, I have not tested it.
 So if there are any bugs, please feel easy to contact me (zhangchbin AATT gmail Ddot com).
 ![avatar](imgs/pipeline.png)
 
-# Cite
+# Citation
 ```
 @ARTICLE{zhang2021delving,
   author={Zhang, Chang-Bin and Jiang, Peng-Tao and Hou, Qibin and Wei, Yunchao and Han, Qi and Li, Zhen and Cheng, Ming-Ming},
   journal={IEEE Transactions on Image Processing}, 
   title={Delving Deep into Label Smoothing}, 
   year={2021},
-  volume={},
+  volume={30},
   number={},
-  pages={1-1},
+  pages={5984-5996},
   doi={10.1109/TIP.2021.3089942}}
 ```
 
