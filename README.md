@@ -34,7 +34,7 @@ So if there are any bugs, please feel easy to contact me (zhangchbin AATT gmail 
 - training code on the ImageNet and CIFAR
 - training code on the Noisy-CIFAR
 - adversarial attack code on the ImageNet and CIFAR
-- the download link of CUB-200-2011, Flowers, Cars and dogs
+- ~~the download link of CUB-200-2011, Flowers, Cars and dogs~~
 
 # Requirements
 ```
@@ -51,13 +51,19 @@ SAN_network
 [SAN network](https://github.com/hszhao/SAN)
 
 # Data Preparation
-I will updated the download link and the file directory of all datasets soon.
+Download all datasets to the ```data``` directory, note that we modify the division for datasets as shown in files in the ```data``` directory:
+
+- You can download the images from [Cars](http://ai.stanford.edu/~jkrause/cars/car_dataset.html). And the lists for training and validation are in the ```data``` directory.
+- You can download the images from [Aircrafts](https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/). And the lists are in the ```data``` directory.
+- You can download the images from [Flowers](https://www.robots.ox.ac.uk/~vgg/data/flowers/) with 102 classes. And the lists are in the ```data``` directory.
+- You can download the images from [Standford-dogs](http://vision.stanford.edu/aditya86/ImageNetDogs/). And the lists are in the ```data``` directory.
 
 # Train and Validate
 1. download the ImageNet pretrained model to ```checkpoint```  
    [MobileNet-v2](https://download.pytorch.org/models/mobilenet_v2-b0353104.pth), [ResNet-50](https://download.pytorch.org/models/resnet50-19c8e357.pth), [Res2Net](https://shanghuagao.oss-cn-beijing.aliyuncs.com/res2net/res2net50_26w_8s-2c7c9f12.pth)
-2. download all datasets to the ```data``` dir
-3. train the model with online label smoothing:  
+
+
+2. train the model with online label smoothing:  
     ```
     CUDA_VISIBLE_DEVICES=1 python main.py \
 	--mode train \
