@@ -31,9 +31,10 @@ So if there are any bugs, please feel easy to contact me (zhangchbin AATT gmail 
 - training scripts for more network and datasets
 - EfficientNet for fine-grained classification
 - SAN network for fine-grained classification
-- training code on the ImageNet and CIFAR
+- training code on the ImageNet
 - training code on the Noisy-CIFAR
 - adversarial attack code on the ImageNet and CIFAR
+- ~~training code on the CIFAR
 - ~~the download link of CUB-200-2011, Flowers, Cars and dogs~~
 
 # Requirements
@@ -88,6 +89,13 @@ Download all datasets to the ```data``` directory, note that we modify the divis
 	--method ols \
 	--batch_size 64 \
     ```
+
+# Train on CIFAR
+    ```
+    cd cifar
+    sh train_cifar_imagenetresnet34.sh
+    sh train_cifar_resnext29_2.sh
+    ````
 
 ## Other realated implementation
 Thanks to the re-implementation in [Kurumi233](https://github.com/Kurumi233/OnlineLabelSmoothing) and [ankandrew](https://github.com/ankandrew/online-label-smoothing-pt)
