@@ -1,0 +1,1508 @@
+train_cifar_newcode_all_methods.py
+Namespace(T=1.0, batch_size=128, bottleneck=True, dali_cpu=False, dataset='cifar100', depth=56, epochs=300, expname='resnext34-2_testcode_ols', gpu=0, local_rank=0, lr=0.1, method='ols', momentum=0.9, net_type='resnext29-2', olsalpha=0.5, phase=None, pretrained='./runs/pretrained_model/resnet50-19c8e357.pth', print_freq=1000, resume=None, save_dir='./', seed=2019, start_epoch=0, theta=0.5, verbose=True, weight_decay=0.0005, width=4, workers=8, world_size=1)
+set the same seed for all.....
+Files already downloaded and verified
+=> creating model 'resnext29-2'
+the number of model parameters: 9221028
+current os time =  2022-04-30 01:05:07
+Epoch: [0/300][0/391]	LR: 0.100000	Time 1.387 (1.387)	Data 0.318 (0.318)	Loss 2.4289 (2.4289)	Top 1-err 100.0000 (100.0000)	Top 5-err 97.6562 (97.6562)
+Test (on val set): [0/300][0/196]	Time 0.329 (0.329)	Loss 3.6842 (3.6842)	Top 1-err 85.9375 (85.9375)	Top 5-err 64.8438 (64.8438)
+* Epoch: [0/300]	 Top 1-err 87.410  Top 5-err 63.840	 Test Loss 3.725
+Current best accuracy (top-1 and 5 error): 87.41 63.84
+current os time =  2022-04-30 01:06:17
+Epoch: [1/300][0/391]	LR: 0.100000	Time 0.417 (0.417)	Data 0.340 (0.340)	Loss 4.2092 (4.2092)	Top 1-err 85.1562 (85.1562)	Top 5-err 60.9375 (60.9375)
+Test (on val set): [1/300][0/196]	Time 0.327 (0.327)	Loss 3.1286 (3.1286)	Top 1-err 75.7812 (75.7812)	Top 5-err 47.6562 (47.6562)
+* Epoch: [1/300]	 Top 1-err 78.130  Top 5-err 48.000	 Test Loss 3.234
+Current best accuracy (top-1 and 5 error): 78.13 48.0
+current os time =  2022-04-30 01:07:29
+Epoch: [2/300][0/391]	LR: 0.100000	Time 0.388 (0.388)	Data 0.316 (0.316)	Loss 3.8181 (3.8181)	Top 1-err 71.0938 (71.0938)	Top 5-err 43.7500 (43.7500)
+Test (on val set): [2/300][0/196]	Time 0.320 (0.320)	Loss 2.7089 (2.7089)	Top 1-err 61.7188 (61.7188)	Top 5-err 32.0312 (32.0312)
+* Epoch: [2/300]	 Top 1-err 70.690  Top 5-err 37.650	 Test Loss 2.896
+Current best accuracy (top-1 and 5 error): 70.69 37.65
+current os time =  2022-04-30 01:08:41
+Epoch: [3/300][0/391]	LR: 0.100000	Time 0.390 (0.390)	Data 0.315 (0.315)	Loss 3.6534 (3.6534)	Top 1-err 70.3125 (70.3125)	Top 5-err 28.9062 (28.9062)
+Test (on val set): [3/300][0/196]	Time 0.325 (0.325)	Loss 2.4906 (2.4906)	Top 1-err 64.0625 (64.0625)	Top 5-err 28.1250 (28.1250)
+* Epoch: [3/300]	 Top 1-err 62.330  Top 5-err 28.620	 Test Loss 2.476
+Current best accuracy (top-1 and 5 error): 62.33 28.62
+current os time =  2022-04-30 01:09:54
+Epoch: [4/300][0/391]	LR: 0.100000	Time 0.400 (0.400)	Data 0.324 (0.324)	Loss 3.4227 (3.4227)	Top 1-err 64.0625 (64.0625)	Top 5-err 31.2500 (31.2500)
+Test (on val set): [4/300][0/196]	Time 0.333 (0.333)	Loss 2.2565 (2.2565)	Top 1-err 53.1250 (53.1250)	Top 5-err 26.5625 (26.5625)
+* Epoch: [4/300]	 Top 1-err 57.640  Top 5-err 24.900	 Test Loss 2.273
+Current best accuracy (top-1 and 5 error): 57.64 24.9
+current os time =  2022-04-30 01:11:07
+Epoch: [5/300][0/391]	LR: 0.100000	Time 0.381 (0.381)	Data 0.303 (0.303)	Loss 3.0441 (3.0441)	Top 1-err 46.0938 (46.0938)	Top 5-err 21.0938 (21.0938)
+Test (on val set): [5/300][0/196]	Time 0.317 (0.317)	Loss 2.0553 (2.0553)	Top 1-err 60.1562 (60.1562)	Top 5-err 20.3125 (20.3125)
+* Epoch: [5/300]	 Top 1-err 54.670  Top 5-err 21.900	 Test Loss 2.099
+Current best accuracy (top-1 and 5 error): 54.67 21.9
+current os time =  2022-04-30 01:12:20
+Epoch: [6/300][0/391]	LR: 0.100000	Time 0.385 (0.385)	Data 0.311 (0.311)	Loss 3.0349 (3.0349)	Top 1-err 57.8125 (57.8125)	Top 5-err 19.5312 (19.5312)
+Test (on val set): [6/300][0/196]	Time 0.324 (0.324)	Loss 1.9706 (1.9706)	Top 1-err 51.5625 (51.5625)	Top 5-err 14.8438 (14.8438)
+* Epoch: [6/300]	 Top 1-err 51.570  Top 5-err 20.200	 Test Loss 2.022
+Current best accuracy (top-1 and 5 error): 51.57 20.2
+current os time =  2022-04-30 01:13:33
+Epoch: [7/300][0/391]	LR: 0.100000	Time 0.390 (0.390)	Data 0.314 (0.314)	Loss 2.6883 (2.6883)	Top 1-err 41.4062 (41.4062)	Top 5-err 14.8438 (14.8438)
+Test (on val set): [7/300][0/196]	Time 0.315 (0.315)	Loss 1.8106 (1.8106)	Top 1-err 48.4375 (48.4375)	Top 5-err 16.4062 (16.4062)
+* Epoch: [7/300]	 Top 1-err 49.040  Top 5-err 17.500	 Test Loss 1.897
+Current best accuracy (top-1 and 5 error): 49.04 17.5
+current os time =  2022-04-30 01:14:46
+Epoch: [8/300][0/391]	LR: 0.100000	Time 0.391 (0.391)	Data 0.314 (0.314)	Loss 2.5345 (2.5345)	Top 1-err 36.7188 (36.7188)	Top 5-err 7.0312 (7.0312)
+Test (on val set): [8/300][0/196]	Time 0.332 (0.332)	Loss 1.7174 (1.7174)	Top 1-err 46.0938 (46.0938)	Top 5-err 17.1875 (17.1875)
+* Epoch: [8/300]	 Top 1-err 46.220  Top 5-err 16.260	 Test Loss 1.764
+Current best accuracy (top-1 and 5 error): 46.22 16.26
+current os time =  2022-04-30 01:16:00
+Epoch: [9/300][0/391]	LR: 0.100000	Time 0.393 (0.393)	Data 0.317 (0.317)	Loss 2.6028 (2.6028)	Top 1-err 45.3125 (45.3125)	Top 5-err 14.8438 (14.8438)
+Test (on val set): [9/300][0/196]	Time 0.322 (0.322)	Loss 1.9286 (1.9286)	Top 1-err 54.6875 (54.6875)	Top 5-err 17.1875 (17.1875)
+* Epoch: [9/300]	 Top 1-err 50.990  Top 5-err 18.870	 Test Loss 1.934
+Current best accuracy (top-1 and 5 error): 46.22 16.26
+current os time =  2022-04-30 01:17:13
+Epoch: [10/300][0/391]	LR: 0.100000	Time 0.402 (0.402)	Data 0.327 (0.327)	Loss 2.5159 (2.5159)	Top 1-err 35.9375 (35.9375)	Top 5-err 13.2812 (13.2812)
+Test (on val set): [10/300][0/196]	Time 0.317 (0.317)	Loss 1.9146 (1.9146)	Top 1-err 54.6875 (54.6875)	Top 5-err 18.7500 (18.7500)
+* Epoch: [10/300]	 Top 1-err 51.140  Top 5-err 19.520	 Test Loss 1.923
+Current best accuracy (top-1 and 5 error): 46.22 16.26
+current os time =  2022-04-30 01:18:26
+Epoch: [11/300][0/391]	LR: 0.100000	Time 0.392 (0.392)	Data 0.314 (0.314)	Loss 2.4510 (2.4510)	Top 1-err 39.0625 (39.0625)	Top 5-err 14.0625 (14.0625)
+Test (on val set): [11/300][0/196]	Time 0.336 (0.336)	Loss 1.9688 (1.9688)	Top 1-err 51.5625 (51.5625)	Top 5-err 21.0938 (21.0938)
+* Epoch: [11/300]	 Top 1-err 47.280  Top 5-err 16.610	 Test Loss 1.782
+Current best accuracy (top-1 and 5 error): 46.22 16.26
+current os time =  2022-04-30 01:19:39
+Epoch: [12/300][0/391]	LR: 0.100000	Time 0.420 (0.420)	Data 0.346 (0.346)	Loss 2.4006 (2.4006)	Top 1-err 39.0625 (39.0625)	Top 5-err 9.3750 (9.3750)
+Test (on val set): [12/300][0/196]	Time 0.315 (0.315)	Loss 1.9119 (1.9119)	Top 1-err 54.6875 (54.6875)	Top 5-err 19.5312 (19.5312)
+* Epoch: [12/300]	 Top 1-err 47.300  Top 5-err 16.660	 Test Loss 1.777
+Current best accuracy (top-1 and 5 error): 46.22 16.26
+current os time =  2022-04-30 01:20:52
+Epoch: [13/300][0/391]	LR: 0.100000	Time 0.372 (0.372)	Data 0.290 (0.290)	Loss 2.4798 (2.4798)	Top 1-err 39.8438 (39.8438)	Top 5-err 13.2812 (13.2812)
+Test (on val set): [13/300][0/196]	Time 0.319 (0.319)	Loss 2.0944 (2.0944)	Top 1-err 50.7812 (50.7812)	Top 5-err 21.8750 (21.8750)
+* Epoch: [13/300]	 Top 1-err 45.940  Top 5-err 16.990	 Test Loss 1.829
+Current best accuracy (top-1 and 5 error): 45.94 16.99
+current os time =  2022-04-30 01:22:06
+Epoch: [14/300][0/391]	LR: 0.100000	Time 0.393 (0.393)	Data 0.310 (0.310)	Loss 2.4410 (2.4410)	Top 1-err 41.4062 (41.4062)	Top 5-err 8.5938 (8.5938)
+Test (on val set): [14/300][0/196]	Time 0.335 (0.335)	Loss 1.9001 (1.9001)	Top 1-err 48.4375 (48.4375)	Top 5-err 19.5312 (19.5312)
+* Epoch: [14/300]	 Top 1-err 45.240  Top 5-err 17.040	 Test Loss 1.729
+Current best accuracy (top-1 and 5 error): 45.24 17.04
+current os time =  2022-04-30 01:23:19
+Epoch: [15/300][0/391]	LR: 0.100000	Time 0.412 (0.412)	Data 0.333 (0.333)	Loss 2.2304 (2.2304)	Top 1-err 32.8125 (32.8125)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [15/300][0/196]	Time 0.322 (0.322)	Loss 1.6536 (1.6536)	Top 1-err 39.0625 (39.0625)	Top 5-err 12.5000 (12.5000)
+* Epoch: [15/300]	 Top 1-err 46.690  Top 5-err 17.170	 Test Loss 1.810
+Current best accuracy (top-1 and 5 error): 45.24 17.04
+current os time =  2022-04-30 01:24:33
+Epoch: [16/300][0/391]	LR: 0.100000	Time 0.381 (0.381)	Data 0.306 (0.306)	Loss 2.3459 (2.3459)	Top 1-err 39.0625 (39.0625)	Top 5-err 7.8125 (7.8125)
+Test (on val set): [16/300][0/196]	Time 0.326 (0.326)	Loss 1.5011 (1.5011)	Top 1-err 35.9375 (35.9375)	Top 5-err 14.0625 (14.0625)
+* Epoch: [16/300]	 Top 1-err 42.580  Top 5-err 13.700	 Test Loss 1.613
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:25:46
+Epoch: [17/300][0/391]	LR: 0.100000	Time 0.375 (0.375)	Data 0.298 (0.298)	Loss 2.3036 (2.3036)	Top 1-err 36.7188 (36.7188)	Top 5-err 9.3750 (9.3750)
+Test (on val set): [17/300][0/196]	Time 0.318 (0.318)	Loss 1.6437 (1.6437)	Top 1-err 45.3125 (45.3125)	Top 5-err 14.8438 (14.8438)
+* Epoch: [17/300]	 Top 1-err 42.890  Top 5-err 13.780	 Test Loss 1.650
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:27:00
+Epoch: [18/300][0/391]	LR: 0.100000	Time 0.398 (0.398)	Data 0.320 (0.320)	Loss 2.2032 (2.2032)	Top 1-err 30.4688 (30.4688)	Top 5-err 8.5938 (8.5938)
+Test (on val set): [18/300][0/196]	Time 0.334 (0.334)	Loss 1.4358 (1.4358)	Top 1-err 34.3750 (34.3750)	Top 5-err 14.8438 (14.8438)
+* Epoch: [18/300]	 Top 1-err 43.330  Top 5-err 14.950	 Test Loss 1.640
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:28:13
+Epoch: [19/300][0/391]	LR: 0.100000	Time 0.402 (0.402)	Data 0.327 (0.327)	Loss 2.0457 (2.0457)	Top 1-err 27.3438 (27.3438)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [19/300][0/196]	Time 0.328 (0.328)	Loss 1.5801 (1.5801)	Top 1-err 42.9688 (42.9688)	Top 5-err 12.5000 (12.5000)
+* Epoch: [19/300]	 Top 1-err 45.350  Top 5-err 16.670	 Test Loss 1.733
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:29:27
+Epoch: [20/300][0/391]	LR: 0.100000	Time 0.400 (0.400)	Data 0.325 (0.325)	Loss 2.0087 (2.0087)	Top 1-err 25.7812 (25.7812)	Top 5-err 7.8125 (7.8125)
+Test (on val set): [20/300][0/196]	Time 0.330 (0.330)	Loss 1.7545 (1.7545)	Top 1-err 53.9062 (53.9062)	Top 5-err 14.8438 (14.8438)
+* Epoch: [20/300]	 Top 1-err 45.950  Top 5-err 16.410	 Test Loss 1.705
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:30:40
+Epoch: [21/300][0/391]	LR: 0.100000	Time 0.382 (0.382)	Data 0.302 (0.302)	Loss 2.1300 (2.1300)	Top 1-err 28.9062 (28.9062)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [21/300][0/196]	Time 0.321 (0.321)	Loss 1.7021 (1.7021)	Top 1-err 42.9688 (42.9688)	Top 5-err 14.0625 (14.0625)
+* Epoch: [21/300]	 Top 1-err 46.950  Top 5-err 17.260	 Test Loss 1.766
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:31:54
+Epoch: [22/300][0/391]	LR: 0.100000	Time 0.407 (0.407)	Data 0.323 (0.323)	Loss 2.0683 (2.0683)	Top 1-err 25.7812 (25.7812)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [22/300][0/196]	Time 0.327 (0.327)	Loss 1.6634 (1.6634)	Top 1-err 40.6250 (40.6250)	Top 5-err 17.1875 (17.1875)
+* Epoch: [22/300]	 Top 1-err 42.970  Top 5-err 14.940	 Test Loss 1.632
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:33:07
+Epoch: [23/300][0/391]	LR: 0.100000	Time 0.392 (0.392)	Data 0.312 (0.312)	Loss 2.0348 (2.0348)	Top 1-err 24.2188 (24.2188)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [23/300][0/196]	Time 0.321 (0.321)	Loss 1.9734 (1.9734)	Top 1-err 52.3438 (52.3438)	Top 5-err 21.0938 (21.0938)
+* Epoch: [23/300]	 Top 1-err 46.850  Top 5-err 18.250	 Test Loss 1.804
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:34:21
+Epoch: [24/300][0/391]	LR: 0.100000	Time 0.390 (0.390)	Data 0.310 (0.310)	Loss 2.0709 (2.0709)	Top 1-err 29.6875 (29.6875)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [24/300][0/196]	Time 0.328 (0.328)	Loss 1.5201 (1.5201)	Top 1-err 40.6250 (40.6250)	Top 5-err 11.7188 (11.7188)
+* Epoch: [24/300]	 Top 1-err 42.770  Top 5-err 15.510	 Test Loss 1.645
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:35:35
+Epoch: [25/300][0/391]	LR: 0.100000	Time 0.366 (0.366)	Data 0.285 (0.285)	Loss 2.0088 (2.0088)	Top 1-err 21.8750 (21.8750)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [25/300][0/196]	Time 0.331 (0.331)	Loss 1.6515 (1.6515)	Top 1-err 46.8750 (46.8750)	Top 5-err 15.6250 (15.6250)
+* Epoch: [25/300]	 Top 1-err 43.270  Top 5-err 15.020	 Test Loss 1.632
+Current best accuracy (top-1 and 5 error): 42.58 13.7
+current os time =  2022-04-30 01:36:48
+Epoch: [26/300][0/391]	LR: 0.100000	Time 0.392 (0.392)	Data 0.313 (0.313)	Loss 2.0456 (2.0456)	Top 1-err 31.2500 (31.2500)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [26/300][0/196]	Time 0.312 (0.312)	Loss 1.4875 (1.4875)	Top 1-err 43.7500 (43.7500)	Top 5-err 11.7188 (11.7188)
+* Epoch: [26/300]	 Top 1-err 40.260  Top 5-err 12.840	 Test Loss 1.514
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:38:02
+Epoch: [27/300][0/391]	LR: 0.100000	Time 0.391 (0.391)	Data 0.315 (0.315)	Loss 1.9866 (1.9866)	Top 1-err 25.7812 (25.7812)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [27/300][0/196]	Time 0.355 (0.355)	Loss 1.6726 (1.6726)	Top 1-err 42.9688 (42.9688)	Top 5-err 15.6250 (15.6250)
+* Epoch: [27/300]	 Top 1-err 44.210  Top 5-err 15.160	 Test Loss 1.672
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:39:16
+Epoch: [28/300][0/391]	LR: 0.100000	Time 0.423 (0.423)	Data 0.342 (0.342)	Loss 1.9427 (1.9427)	Top 1-err 25.0000 (25.0000)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [28/300][0/196]	Time 0.326 (0.326)	Loss 1.5800 (1.5800)	Top 1-err 40.6250 (40.6250)	Top 5-err 13.2812 (13.2812)
+* Epoch: [28/300]	 Top 1-err 45.460  Top 5-err 16.330	 Test Loss 1.689
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:40:29
+Epoch: [29/300][0/391]	LR: 0.100000	Time 0.408 (0.408)	Data 0.324 (0.324)	Loss 2.0785 (2.0785)	Top 1-err 28.1250 (28.1250)	Top 5-err 7.0312 (7.0312)
+Test (on val set): [29/300][0/196]	Time 0.319 (0.319)	Loss 2.1230 (2.1230)	Top 1-err 52.3438 (52.3438)	Top 5-err 25.7812 (25.7812)
+* Epoch: [29/300]	 Top 1-err 49.770  Top 5-err 19.400	 Test Loss 1.874
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:41:43
+Epoch: [30/300][0/391]	LR: 0.100000	Time 0.400 (0.400)	Data 0.323 (0.323)	Loss 1.9994 (1.9994)	Top 1-err 25.0000 (25.0000)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [30/300][0/196]	Time 0.325 (0.325)	Loss 1.5775 (1.5775)	Top 1-err 39.0625 (39.0625)	Top 5-err 14.8438 (14.8438)
+* Epoch: [30/300]	 Top 1-err 43.980  Top 5-err 14.160	 Test Loss 1.640
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:42:57
+Epoch: [31/300][0/391]	LR: 0.100000	Time 0.428 (0.428)	Data 0.344 (0.344)	Loss 1.9808 (1.9808)	Top 1-err 23.4375 (23.4375)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [31/300][0/196]	Time 0.326 (0.326)	Loss 1.4373 (1.4373)	Top 1-err 43.7500 (43.7500)	Top 5-err 10.1562 (10.1562)
+* Epoch: [31/300]	 Top 1-err 42.740  Top 5-err 13.950	 Test Loss 1.592
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:44:10
+Epoch: [32/300][0/391]	LR: 0.100000	Time 0.396 (0.396)	Data 0.314 (0.314)	Loss 1.8916 (1.8916)	Top 1-err 25.7812 (25.7812)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [32/300][0/196]	Time 0.315 (0.315)	Loss 1.5879 (1.5879)	Top 1-err 43.7500 (43.7500)	Top 5-err 14.0625 (14.0625)
+* Epoch: [32/300]	 Top 1-err 43.940  Top 5-err 15.850	 Test Loss 1.671
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:45:24
+Epoch: [33/300][0/391]	LR: 0.100000	Time 0.404 (0.404)	Data 0.318 (0.318)	Loss 2.0269 (2.0269)	Top 1-err 26.5625 (26.5625)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [33/300][0/196]	Time 0.326 (0.326)	Loss 1.4405 (1.4405)	Top 1-err 37.5000 (37.5000)	Top 5-err 12.5000 (12.5000)
+* Epoch: [33/300]	 Top 1-err 41.470  Top 5-err 12.630	 Test Loss 1.530
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:46:38
+Epoch: [34/300][0/391]	LR: 0.100000	Time 0.373 (0.373)	Data 0.294 (0.294)	Loss 1.8457 (1.8457)	Top 1-err 23.4375 (23.4375)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [34/300][0/196]	Time 0.335 (0.335)	Loss 1.5579 (1.5579)	Top 1-err 42.9688 (42.9688)	Top 5-err 15.6250 (15.6250)
+* Epoch: [34/300]	 Top 1-err 43.450  Top 5-err 14.800	 Test Loss 1.656
+Current best accuracy (top-1 and 5 error): 40.26 12.84
+current os time =  2022-04-30 01:47:51
+Epoch: [35/300][0/391]	LR: 0.100000	Time 0.381 (0.381)	Data 0.295 (0.295)	Loss 1.8911 (1.8911)	Top 1-err 24.2188 (24.2188)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [35/300][0/196]	Time 0.325 (0.325)	Loss 1.3482 (1.3482)	Top 1-err 38.2812 (38.2812)	Top 5-err 7.0312 (7.0312)
+* Epoch: [35/300]	 Top 1-err 39.910  Top 5-err 12.700	 Test Loss 1.479
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:49:05
+Epoch: [36/300][0/391]	LR: 0.100000	Time 0.407 (0.407)	Data 0.329 (0.329)	Loss 1.8486 (1.8486)	Top 1-err 18.7500 (18.7500)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [36/300][0/196]	Time 0.329 (0.329)	Loss 1.4323 (1.4323)	Top 1-err 37.5000 (37.5000)	Top 5-err 13.2812 (13.2812)
+* Epoch: [36/300]	 Top 1-err 40.200  Top 5-err 12.850	 Test Loss 1.500
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:50:19
+Epoch: [37/300][0/391]	LR: 0.100000	Time 0.405 (0.405)	Data 0.325 (0.325)	Loss 2.0578 (2.0578)	Top 1-err 27.3438 (27.3438)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [37/300][0/196]	Time 0.335 (0.335)	Loss 1.5765 (1.5765)	Top 1-err 43.7500 (43.7500)	Top 5-err 14.0625 (14.0625)
+* Epoch: [37/300]	 Top 1-err 41.390  Top 5-err 13.250	 Test Loss 1.518
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:51:32
+Epoch: [38/300][0/391]	LR: 0.100000	Time 0.390 (0.390)	Data 0.316 (0.316)	Loss 1.8739 (1.8739)	Top 1-err 24.2188 (24.2188)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [38/300][0/196]	Time 0.322 (0.322)	Loss 1.2633 (1.2633)	Top 1-err 35.9375 (35.9375)	Top 5-err 8.5938 (8.5938)
+* Epoch: [38/300]	 Top 1-err 40.350  Top 5-err 13.560	 Test Loss 1.519
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:52:46
+Epoch: [39/300][0/391]	LR: 0.100000	Time 0.403 (0.403)	Data 0.323 (0.323)	Loss 1.9287 (1.9287)	Top 1-err 21.8750 (21.8750)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [39/300][0/196]	Time 0.335 (0.335)	Loss 1.6935 (1.6935)	Top 1-err 43.7500 (43.7500)	Top 5-err 18.7500 (18.7500)
+* Epoch: [39/300]	 Top 1-err 44.460  Top 5-err 15.950	 Test Loss 1.674
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:54:00
+Epoch: [40/300][0/391]	LR: 0.100000	Time 0.396 (0.396)	Data 0.316 (0.316)	Loss 1.9324 (1.9324)	Top 1-err 21.0938 (21.0938)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [40/300][0/196]	Time 0.318 (0.318)	Loss 1.2759 (1.2759)	Top 1-err 33.5938 (33.5938)	Top 5-err 11.7188 (11.7188)
+* Epoch: [40/300]	 Top 1-err 40.480  Top 5-err 13.530	 Test Loss 1.518
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:55:13
+Epoch: [41/300][0/391]	LR: 0.100000	Time 0.389 (0.389)	Data 0.308 (0.308)	Loss 1.9612 (1.9612)	Top 1-err 26.5625 (26.5625)	Top 5-err 7.0312 (7.0312)
+Test (on val set): [41/300][0/196]	Time 0.330 (0.330)	Loss 1.2320 (1.2320)	Top 1-err 32.0312 (32.0312)	Top 5-err 7.0312 (7.0312)
+* Epoch: [41/300]	 Top 1-err 40.100  Top 5-err 12.250	 Test Loss 1.484
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:56:27
+Epoch: [42/300][0/391]	LR: 0.100000	Time 0.379 (0.379)	Data 0.293 (0.293)	Loss 1.9475 (1.9475)	Top 1-err 18.7500 (18.7500)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [42/300][0/196]	Time 0.377 (0.377)	Loss 1.5420 (1.5420)	Top 1-err 40.6250 (40.6250)	Top 5-err 10.1562 (10.1562)
+* Epoch: [42/300]	 Top 1-err 42.690  Top 5-err 12.930	 Test Loss 1.600
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:57:41
+Epoch: [43/300][0/391]	LR: 0.100000	Time 0.402 (0.402)	Data 0.320 (0.320)	Loss 1.8474 (1.8474)	Top 1-err 17.1875 (17.1875)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [43/300][0/196]	Time 0.324 (0.324)	Loss 2.0207 (2.0207)	Top 1-err 53.1250 (53.1250)	Top 5-err 23.4375 (23.4375)
+* Epoch: [43/300]	 Top 1-err 51.350  Top 5-err 19.400	 Test Loss 1.930
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 01:58:55
+Epoch: [44/300][0/391]	LR: 0.100000	Time 0.382 (0.382)	Data 0.297 (0.297)	Loss 1.9086 (1.9086)	Top 1-err 19.5312 (19.5312)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [44/300][0/196]	Time 0.328 (0.328)	Loss 1.6656 (1.6656)	Top 1-err 44.5312 (44.5312)	Top 5-err 13.2812 (13.2812)
+* Epoch: [44/300]	 Top 1-err 45.340  Top 5-err 16.040	 Test Loss 1.699
+Current best accuracy (top-1 and 5 error): 39.91 12.7
+current os time =  2022-04-30 02:00:08
+Epoch: [45/300][0/391]	LR: 0.100000	Time 0.383 (0.383)	Data 0.305 (0.305)	Loss 1.9598 (1.9598)	Top 1-err 25.7812 (25.7812)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [45/300][0/196]	Time 0.332 (0.332)	Loss 1.5970 (1.5970)	Top 1-err 40.6250 (40.6250)	Top 5-err 16.4062 (16.4062)
+* Epoch: [45/300]	 Top 1-err 39.240  Top 5-err 11.860	 Test Loss 1.450
+Current best accuracy (top-1 and 5 error): 39.24 11.86
+current os time =  2022-04-30 02:01:23
+Epoch: [46/300][0/391]	LR: 0.100000	Time 0.417 (0.417)	Data 0.336 (0.336)	Loss 1.8789 (1.8789)	Top 1-err 21.8750 (21.8750)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [46/300][0/196]	Time 0.316 (0.316)	Loss 1.3538 (1.3538)	Top 1-err 35.1562 (35.1562)	Top 5-err 10.1562 (10.1562)
+* Epoch: [46/300]	 Top 1-err 38.570  Top 5-err 11.640	 Test Loss 1.411
+Current best accuracy (top-1 and 5 error): 38.57 11.64
+current os time =  2022-04-30 02:02:36
+Epoch: [47/300][0/391]	LR: 0.100000	Time 0.382 (0.382)	Data 0.294 (0.294)	Loss 1.9424 (1.9424)	Top 1-err 27.3438 (27.3438)	Top 5-err 8.5938 (8.5938)
+Test (on val set): [47/300][0/196]	Time 0.325 (0.325)	Loss 1.6061 (1.6061)	Top 1-err 45.3125 (45.3125)	Top 5-err 15.6250 (15.6250)
+* Epoch: [47/300]	 Top 1-err 40.100  Top 5-err 13.460	 Test Loss 1.488
+Current best accuracy (top-1 and 5 error): 38.57 11.64
+current os time =  2022-04-30 02:03:50
+Epoch: [48/300][0/391]	LR: 0.100000	Time 0.401 (0.401)	Data 0.323 (0.323)	Loss 1.8373 (1.8373)	Top 1-err 21.0938 (21.0938)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [48/300][0/196]	Time 0.314 (0.314)	Loss 1.7584 (1.7584)	Top 1-err 47.6562 (47.6562)	Top 5-err 10.9375 (10.9375)
+* Epoch: [48/300]	 Top 1-err 47.750  Top 5-err 17.760	 Test Loss 1.850
+Current best accuracy (top-1 and 5 error): 38.57 11.64
+current os time =  2022-04-30 02:05:04
+Epoch: [49/300][0/391]	LR: 0.100000	Time 0.394 (0.394)	Data 0.313 (0.313)	Loss 1.8418 (1.8418)	Top 1-err 19.5312 (19.5312)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [49/300][0/196]	Time 0.317 (0.317)	Loss 1.2391 (1.2391)	Top 1-err 30.4688 (30.4688)	Top 5-err 11.7188 (11.7188)
+* Epoch: [49/300]	 Top 1-err 40.950  Top 5-err 13.250	 Test Loss 1.509
+Current best accuracy (top-1 and 5 error): 38.57 11.64
+current os time =  2022-04-30 02:06:17
+Epoch: [50/300][0/391]	LR: 0.100000	Time 0.391 (0.391)	Data 0.314 (0.314)	Loss 1.9558 (1.9558)	Top 1-err 27.3438 (27.3438)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [50/300][0/196]	Time 0.316 (0.316)	Loss 1.3479 (1.3479)	Top 1-err 35.9375 (35.9375)	Top 5-err 10.9375 (10.9375)
+* Epoch: [50/300]	 Top 1-err 37.170  Top 5-err 10.500	 Test Loss 1.388
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:07:31
+Epoch: [51/300][0/391]	LR: 0.100000	Time 0.393 (0.393)	Data 0.317 (0.317)	Loss 1.9425 (1.9425)	Top 1-err 25.0000 (25.0000)	Top 5-err 7.0312 (7.0312)
+Test (on val set): [51/300][0/196]	Time 0.327 (0.327)	Loss 1.5231 (1.5231)	Top 1-err 36.7188 (36.7188)	Top 5-err 14.0625 (14.0625)
+* Epoch: [51/300]	 Top 1-err 38.830  Top 5-err 12.850	 Test Loss 1.517
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:08:45
+Epoch: [52/300][0/391]	LR: 0.100000	Time 0.404 (0.404)	Data 0.321 (0.321)	Loss 1.7425 (1.7425)	Top 1-err 13.2812 (13.2812)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [52/300][0/196]	Time 0.322 (0.322)	Loss 1.5376 (1.5376)	Top 1-err 46.8750 (46.8750)	Top 5-err 13.2812 (13.2812)
+* Epoch: [52/300]	 Top 1-err 43.470  Top 5-err 15.160	 Test Loss 1.597
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:09:59
+Epoch: [53/300][0/391]	LR: 0.100000	Time 0.380 (0.380)	Data 0.302 (0.302)	Loss 2.0076 (2.0076)	Top 1-err 28.1250 (28.1250)	Top 5-err 8.5938 (8.5938)
+Test (on val set): [53/300][0/196]	Time 0.326 (0.326)	Loss 1.4985 (1.4985)	Top 1-err 42.9688 (42.9688)	Top 5-err 14.0625 (14.0625)
+* Epoch: [53/300]	 Top 1-err 44.680  Top 5-err 15.210	 Test Loss 1.642
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:11:13
+Epoch: [54/300][0/391]	LR: 0.100000	Time 0.408 (0.408)	Data 0.327 (0.327)	Loss 1.8399 (1.8399)	Top 1-err 17.1875 (17.1875)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [54/300][0/196]	Time 0.319 (0.319)	Loss 1.6412 (1.6412)	Top 1-err 49.2188 (49.2188)	Top 5-err 16.4062 (16.4062)
+* Epoch: [54/300]	 Top 1-err 42.900  Top 5-err 14.030	 Test Loss 1.604
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:12:26
+Epoch: [55/300][0/391]	LR: 0.100000	Time 0.392 (0.392)	Data 0.310 (0.310)	Loss 1.8536 (1.8536)	Top 1-err 21.8750 (21.8750)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [55/300][0/196]	Time 0.324 (0.324)	Loss 1.4527 (1.4527)	Top 1-err 34.3750 (34.3750)	Top 5-err 11.7188 (11.7188)
+* Epoch: [55/300]	 Top 1-err 43.000  Top 5-err 16.520	 Test Loss 1.652
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:13:40
+Epoch: [56/300][0/391]	LR: 0.100000	Time 0.394 (0.394)	Data 0.307 (0.307)	Loss 1.8993 (1.8993)	Top 1-err 23.4375 (23.4375)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [56/300][0/196]	Time 0.322 (0.322)	Loss 1.8378 (1.8378)	Top 1-err 46.0938 (46.0938)	Top 5-err 15.6250 (15.6250)
+* Epoch: [56/300]	 Top 1-err 44.460  Top 5-err 14.370	 Test Loss 1.638
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:14:54
+Epoch: [57/300][0/391]	LR: 0.100000	Time 0.395 (0.395)	Data 0.317 (0.317)	Loss 1.8076 (1.8076)	Top 1-err 17.9688 (17.9688)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [57/300][0/196]	Time 0.337 (0.337)	Loss 1.7514 (1.7514)	Top 1-err 45.3125 (45.3125)	Top 5-err 15.6250 (15.6250)
+* Epoch: [57/300]	 Top 1-err 44.700  Top 5-err 16.160	 Test Loss 1.713
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:16:08
+Epoch: [58/300][0/391]	LR: 0.100000	Time 0.391 (0.391)	Data 0.309 (0.309)	Loss 2.0308 (2.0308)	Top 1-err 29.6875 (29.6875)	Top 5-err 7.8125 (7.8125)
+Test (on val set): [58/300][0/196]	Time 0.319 (0.319)	Loss 1.2862 (1.2862)	Top 1-err 31.2500 (31.2500)	Top 5-err 11.7188 (11.7188)
+* Epoch: [58/300]	 Top 1-err 42.640  Top 5-err 14.470	 Test Loss 1.572
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:17:21
+Epoch: [59/300][0/391]	LR: 0.100000	Time 0.403 (0.403)	Data 0.324 (0.324)	Loss 2.0170 (2.0170)	Top 1-err 28.9062 (28.9062)	Top 5-err 7.0312 (7.0312)
+Test (on val set): [59/300][0/196]	Time 0.322 (0.322)	Loss 1.6505 (1.6505)	Top 1-err 42.9688 (42.9688)	Top 5-err 17.1875 (17.1875)
+* Epoch: [59/300]	 Top 1-err 46.540  Top 5-err 17.560	 Test Loss 1.791
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:18:35
+Epoch: [60/300][0/391]	LR: 0.100000	Time 0.382 (0.382)	Data 0.307 (0.307)	Loss 1.8448 (1.8448)	Top 1-err 25.0000 (25.0000)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [60/300][0/196]	Time 0.325 (0.325)	Loss 1.8619 (1.8619)	Top 1-err 49.2188 (49.2188)	Top 5-err 17.1875 (17.1875)
+* Epoch: [60/300]	 Top 1-err 47.110  Top 5-err 19.060	 Test Loss 1.810
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:19:49
+Epoch: [61/300][0/391]	LR: 0.100000	Time 0.411 (0.411)	Data 0.330 (0.330)	Loss 1.9464 (1.9464)	Top 1-err 31.2500 (31.2500)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [61/300][0/196]	Time 0.337 (0.337)	Loss 1.5027 (1.5027)	Top 1-err 41.4062 (41.4062)	Top 5-err 12.5000 (12.5000)
+* Epoch: [61/300]	 Top 1-err 42.680  Top 5-err 14.230	 Test Loss 1.607
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:21:02
+Epoch: [62/300][0/391]	LR: 0.100000	Time 0.382 (0.382)	Data 0.300 (0.300)	Loss 1.8631 (1.8631)	Top 1-err 20.3125 (20.3125)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [62/300][0/196]	Time 0.317 (0.317)	Loss 1.8545 (1.8545)	Top 1-err 46.8750 (46.8750)	Top 5-err 23.4375 (23.4375)
+* Epoch: [62/300]	 Top 1-err 44.420  Top 5-err 16.380	 Test Loss 1.706
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:22:16
+Epoch: [63/300][0/391]	LR: 0.100000	Time 0.381 (0.381)	Data 0.303 (0.303)	Loss 2.0546 (2.0546)	Top 1-err 32.0312 (32.0312)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [63/300][0/196]	Time 0.329 (0.329)	Loss 1.3248 (1.3248)	Top 1-err 34.3750 (34.3750)	Top 5-err 9.3750 (9.3750)
+* Epoch: [63/300]	 Top 1-err 38.340  Top 5-err 11.930	 Test Loss 1.466
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:23:30
+Epoch: [64/300][0/391]	LR: 0.100000	Time 0.408 (0.408)	Data 0.331 (0.331)	Loss 1.8702 (1.8702)	Top 1-err 22.6562 (22.6562)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [64/300][0/196]	Time 0.332 (0.332)	Loss 1.5511 (1.5511)	Top 1-err 42.9688 (42.9688)	Top 5-err 12.5000 (12.5000)
+* Epoch: [64/300]	 Top 1-err 39.340  Top 5-err 13.020	 Test Loss 1.488
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:24:43
+Epoch: [65/300][0/391]	LR: 0.100000	Time 0.394 (0.394)	Data 0.318 (0.318)	Loss 1.8092 (1.8092)	Top 1-err 19.5312 (19.5312)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [65/300][0/196]	Time 0.321 (0.321)	Loss 1.3352 (1.3352)	Top 1-err 36.7188 (36.7188)	Top 5-err 10.1562 (10.1562)
+* Epoch: [65/300]	 Top 1-err 38.460  Top 5-err 11.030	 Test Loss 1.422
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:25:57
+Epoch: [66/300][0/391]	LR: 0.100000	Time 0.394 (0.394)	Data 0.314 (0.314)	Loss 1.7650 (1.7650)	Top 1-err 22.6562 (22.6562)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [66/300][0/196]	Time 0.329 (0.329)	Loss 1.6025 (1.6025)	Top 1-err 41.4062 (41.4062)	Top 5-err 14.8438 (14.8438)
+* Epoch: [66/300]	 Top 1-err 47.510  Top 5-err 16.750	 Test Loss 1.757
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:27:11
+Epoch: [67/300][0/391]	LR: 0.100000	Time 0.414 (0.414)	Data 0.331 (0.331)	Loss 1.9072 (1.9072)	Top 1-err 30.4688 (30.4688)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [67/300][0/196]	Time 0.320 (0.320)	Loss 1.3313 (1.3313)	Top 1-err 34.3750 (34.3750)	Top 5-err 10.9375 (10.9375)
+* Epoch: [67/300]	 Top 1-err 44.220  Top 5-err 14.730	 Test Loss 1.624
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:28:25
+Epoch: [68/300][0/391]	LR: 0.100000	Time 0.400 (0.400)	Data 0.315 (0.315)	Loss 1.9629 (1.9629)	Top 1-err 28.1250 (28.1250)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [68/300][0/196]	Time 0.330 (0.330)	Loss 1.8546 (1.8546)	Top 1-err 51.5625 (51.5625)	Top 5-err 17.1875 (17.1875)
+* Epoch: [68/300]	 Top 1-err 48.210  Top 5-err 15.700	 Test Loss 1.837
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:29:38
+Epoch: [69/300][0/391]	LR: 0.100000	Time 0.393 (0.393)	Data 0.318 (0.318)	Loss 1.8887 (1.8887)	Top 1-err 23.4375 (23.4375)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [69/300][0/196]	Time 0.325 (0.325)	Loss 1.7582 (1.7582)	Top 1-err 46.8750 (46.8750)	Top 5-err 19.5312 (19.5312)
+* Epoch: [69/300]	 Top 1-err 40.280  Top 5-err 14.660	 Test Loss 1.531
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:30:52
+Epoch: [70/300][0/391]	LR: 0.100000	Time 0.393 (0.393)	Data 0.317 (0.317)	Loss 1.7559 (1.7559)	Top 1-err 21.0938 (21.0938)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [70/300][0/196]	Time 0.322 (0.322)	Loss 1.3471 (1.3471)	Top 1-err 35.9375 (35.9375)	Top 5-err 8.5938 (8.5938)
+* Epoch: [70/300]	 Top 1-err 42.040  Top 5-err 14.220	 Test Loss 1.589
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:32:06
+Epoch: [71/300][0/391]	LR: 0.100000	Time 0.402 (0.402)	Data 0.323 (0.323)	Loss 1.9106 (1.9106)	Top 1-err 22.6562 (22.6562)	Top 5-err 7.8125 (7.8125)
+Test (on val set): [71/300][0/196]	Time 0.322 (0.322)	Loss 1.5804 (1.5804)	Top 1-err 41.4062 (41.4062)	Top 5-err 12.5000 (12.5000)
+* Epoch: [71/300]	 Top 1-err 42.170  Top 5-err 14.220	 Test Loss 1.616
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:33:19
+Epoch: [72/300][0/391]	LR: 0.100000	Time 0.395 (0.395)	Data 0.315 (0.315)	Loss 1.8260 (1.8260)	Top 1-err 24.2188 (24.2188)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [72/300][0/196]	Time 0.319 (0.319)	Loss 1.5797 (1.5797)	Top 1-err 43.7500 (43.7500)	Top 5-err 16.4062 (16.4062)
+* Epoch: [72/300]	 Top 1-err 39.550  Top 5-err 13.480	 Test Loss 1.510
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:34:33
+Epoch: [73/300][0/391]	LR: 0.100000	Time 0.406 (0.406)	Data 0.326 (0.326)	Loss 1.8022 (1.8022)	Top 1-err 22.6562 (22.6562)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [73/300][0/196]	Time 0.329 (0.329)	Loss 1.6636 (1.6636)	Top 1-err 42.1875 (42.1875)	Top 5-err 19.5312 (19.5312)
+* Epoch: [73/300]	 Top 1-err 45.530  Top 5-err 18.490	 Test Loss 1.791
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:35:47
+Epoch: [74/300][0/391]	LR: 0.100000	Time 0.390 (0.390)	Data 0.310 (0.310)	Loss 1.9835 (1.9835)	Top 1-err 29.6875 (29.6875)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [74/300][0/196]	Time 0.338 (0.338)	Loss 1.5162 (1.5162)	Top 1-err 42.9688 (42.9688)	Top 5-err 13.2812 (13.2812)
+* Epoch: [74/300]	 Top 1-err 40.250  Top 5-err 13.780	 Test Loss 1.515
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:37:01
+Epoch: [75/300][0/391]	LR: 0.100000	Time 0.399 (0.399)	Data 0.318 (0.318)	Loss 1.8442 (1.8442)	Top 1-err 16.4062 (16.4062)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [75/300][0/196]	Time 0.331 (0.331)	Loss 1.8426 (1.8426)	Top 1-err 46.8750 (46.8750)	Top 5-err 21.0938 (21.0938)
+* Epoch: [75/300]	 Top 1-err 41.150  Top 5-err 13.850	 Test Loss 1.570
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:38:15
+Epoch: [76/300][0/391]	LR: 0.100000	Time 0.386 (0.386)	Data 0.308 (0.308)	Loss 1.8881 (1.8881)	Top 1-err 20.3125 (20.3125)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [76/300][0/196]	Time 0.337 (0.337)	Loss 1.4755 (1.4755)	Top 1-err 42.9688 (42.9688)	Top 5-err 10.9375 (10.9375)
+* Epoch: [76/300]	 Top 1-err 46.300  Top 5-err 15.320	 Test Loss 1.725
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:39:28
+Epoch: [77/300][0/391]	LR: 0.100000	Time 0.409 (0.409)	Data 0.329 (0.329)	Loss 1.8718 (1.8718)	Top 1-err 28.1250 (28.1250)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [77/300][0/196]	Time 0.326 (0.326)	Loss 1.4068 (1.4068)	Top 1-err 34.3750 (34.3750)	Top 5-err 14.0625 (14.0625)
+* Epoch: [77/300]	 Top 1-err 40.030  Top 5-err 13.490	 Test Loss 1.508
+Current best accuracy (top-1 and 5 error): 37.17 10.5
+current os time =  2022-04-30 02:40:42
+Epoch: [78/300][0/391]	LR: 0.100000	Time 0.378 (0.378)	Data 0.294 (0.294)	Loss 1.8445 (1.8445)	Top 1-err 23.4375 (23.4375)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [78/300][0/196]	Time 0.324 (0.324)	Loss 1.4273 (1.4273)	Top 1-err 40.6250 (40.6250)	Top 5-err 12.5000 (12.5000)
+* Epoch: [78/300]	 Top 1-err 37.060  Top 5-err 11.000	 Test Loss 1.389
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:41:56
+Epoch: [79/300][0/391]	LR: 0.100000	Time 0.400 (0.400)	Data 0.324 (0.324)	Loss 1.9248 (1.9248)	Top 1-err 28.1250 (28.1250)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [79/300][0/196]	Time 0.314 (0.314)	Loss 1.4416 (1.4416)	Top 1-err 34.3750 (34.3750)	Top 5-err 12.5000 (12.5000)
+* Epoch: [79/300]	 Top 1-err 38.800  Top 5-err 12.320	 Test Loss 1.499
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:43:10
+Epoch: [80/300][0/391]	LR: 0.100000	Time 0.380 (0.380)	Data 0.300 (0.300)	Loss 1.9129 (1.9129)	Top 1-err 23.4375 (23.4375)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [80/300][0/196]	Time 0.331 (0.331)	Loss 1.5253 (1.5253)	Top 1-err 39.8438 (39.8438)	Top 5-err 13.2812 (13.2812)
+* Epoch: [80/300]	 Top 1-err 40.760  Top 5-err 13.320	 Test Loss 1.554
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:44:24
+Epoch: [81/300][0/391]	LR: 0.100000	Time 0.405 (0.405)	Data 0.328 (0.328)	Loss 1.8578 (1.8578)	Top 1-err 22.6562 (22.6562)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [81/300][0/196]	Time 0.324 (0.324)	Loss 1.4372 (1.4372)	Top 1-err 42.1875 (42.1875)	Top 5-err 10.9375 (10.9375)
+* Epoch: [81/300]	 Top 1-err 38.360  Top 5-err 11.930	 Test Loss 1.447
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:45:37
+Epoch: [82/300][0/391]	LR: 0.100000	Time 0.414 (0.414)	Data 0.334 (0.334)	Loss 1.7776 (1.7776)	Top 1-err 18.7500 (18.7500)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [82/300][0/196]	Time 0.330 (0.330)	Loss 1.6155 (1.6155)	Top 1-err 44.5312 (44.5312)	Top 5-err 13.2812 (13.2812)
+* Epoch: [82/300]	 Top 1-err 40.310  Top 5-err 13.320	 Test Loss 1.514
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:46:51
+Epoch: [83/300][0/391]	LR: 0.100000	Time 0.396 (0.396)	Data 0.315 (0.315)	Loss 1.8868 (1.8868)	Top 1-err 25.0000 (25.0000)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [83/300][0/196]	Time 0.317 (0.317)	Loss 1.5067 (1.5067)	Top 1-err 46.8750 (46.8750)	Top 5-err 11.7188 (11.7188)
+* Epoch: [83/300]	 Top 1-err 44.350  Top 5-err 16.010	 Test Loss 1.689
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:48:05
+Epoch: [84/300][0/391]	LR: 0.100000	Time 0.414 (0.414)	Data 0.338 (0.338)	Loss 1.7472 (1.7472)	Top 1-err 19.5312 (19.5312)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [84/300][0/196]	Time 0.332 (0.332)	Loss 1.5946 (1.5946)	Top 1-err 45.3125 (45.3125)	Top 5-err 14.0625 (14.0625)
+* Epoch: [84/300]	 Top 1-err 39.880  Top 5-err 13.080	 Test Loss 1.521
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:49:19
+Epoch: [85/300][0/391]	LR: 0.100000	Time 0.369 (0.369)	Data 0.288 (0.288)	Loss 1.8395 (1.8395)	Top 1-err 23.4375 (23.4375)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [85/300][0/196]	Time 0.315 (0.315)	Loss 1.8456 (1.8456)	Top 1-err 46.0938 (46.0938)	Top 5-err 17.1875 (17.1875)
+* Epoch: [85/300]	 Top 1-err 43.790  Top 5-err 16.440	 Test Loss 1.675
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:50:32
+Epoch: [86/300][0/391]	LR: 0.100000	Time 0.424 (0.424)	Data 0.339 (0.339)	Loss 1.7818 (1.7818)	Top 1-err 19.5312 (19.5312)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [86/300][0/196]	Time 0.321 (0.321)	Loss 1.7084 (1.7084)	Top 1-err 43.7500 (43.7500)	Top 5-err 18.7500 (18.7500)
+* Epoch: [86/300]	 Top 1-err 44.000  Top 5-err 16.880	 Test Loss 1.681
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:51:46
+Epoch: [87/300][0/391]	LR: 0.100000	Time 0.407 (0.407)	Data 0.330 (0.330)	Loss 1.8009 (1.8009)	Top 1-err 18.7500 (18.7500)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [87/300][0/196]	Time 0.327 (0.327)	Loss 1.5577 (1.5577)	Top 1-err 38.2812 (38.2812)	Top 5-err 17.1875 (17.1875)
+* Epoch: [87/300]	 Top 1-err 41.230  Top 5-err 13.460	 Test Loss 1.600
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:53:00
+Epoch: [88/300][0/391]	LR: 0.100000	Time 0.384 (0.384)	Data 0.297 (0.297)	Loss 1.7687 (1.7687)	Top 1-err 21.0938 (21.0938)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [88/300][0/196]	Time 0.328 (0.328)	Loss 1.4567 (1.4567)	Top 1-err 40.6250 (40.6250)	Top 5-err 14.8438 (14.8438)
+* Epoch: [88/300]	 Top 1-err 39.680  Top 5-err 14.180	 Test Loss 1.513
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:54:14
+Epoch: [89/300][0/391]	LR: 0.100000	Time 0.387 (0.387)	Data 0.310 (0.310)	Loss 1.7757 (1.7757)	Top 1-err 22.6562 (22.6562)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [89/300][0/196]	Time 0.334 (0.334)	Loss 1.6633 (1.6633)	Top 1-err 46.8750 (46.8750)	Top 5-err 15.6250 (15.6250)
+* Epoch: [89/300]	 Top 1-err 39.560  Top 5-err 12.840	 Test Loss 1.462
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:55:27
+Epoch: [90/300][0/391]	LR: 0.100000	Time 0.396 (0.396)	Data 0.323 (0.323)	Loss 1.9206 (1.9206)	Top 1-err 28.9062 (28.9062)	Top 5-err 7.0312 (7.0312)
+Test (on val set): [90/300][0/196]	Time 0.335 (0.335)	Loss 1.6004 (1.6004)	Top 1-err 45.3125 (45.3125)	Top 5-err 11.7188 (11.7188)
+* Epoch: [90/300]	 Top 1-err 45.730  Top 5-err 18.710	 Test Loss 1.776
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:56:41
+Epoch: [91/300][0/391]	LR: 0.100000	Time 0.393 (0.393)	Data 0.312 (0.312)	Loss 1.8967 (1.8967)	Top 1-err 25.7812 (25.7812)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [91/300][0/196]	Time 0.335 (0.335)	Loss 1.5050 (1.5050)	Top 1-err 41.4062 (41.4062)	Top 5-err 13.2812 (13.2812)
+* Epoch: [91/300]	 Top 1-err 44.430  Top 5-err 15.860	 Test Loss 1.697
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:57:55
+Epoch: [92/300][0/391]	LR: 0.100000	Time 0.403 (0.403)	Data 0.317 (0.317)	Loss 1.9218 (1.9218)	Top 1-err 25.0000 (25.0000)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [92/300][0/196]	Time 0.320 (0.320)	Loss 1.3557 (1.3557)	Top 1-err 34.3750 (34.3750)	Top 5-err 10.1562 (10.1562)
+* Epoch: [92/300]	 Top 1-err 41.150  Top 5-err 11.850	 Test Loss 1.522
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 02:59:08
+Epoch: [93/300][0/391]	LR: 0.100000	Time 0.397 (0.397)	Data 0.316 (0.316)	Loss 1.7990 (1.7990)	Top 1-err 19.5312 (19.5312)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [93/300][0/196]	Time 0.333 (0.333)	Loss 1.8070 (1.8070)	Top 1-err 46.8750 (46.8750)	Top 5-err 19.5312 (19.5312)
+* Epoch: [93/300]	 Top 1-err 49.170  Top 5-err 18.360	 Test Loss 1.875
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:00:22
+Epoch: [94/300][0/391]	LR: 0.100000	Time 0.402 (0.402)	Data 0.323 (0.323)	Loss 1.8879 (1.8879)	Top 1-err 25.0000 (25.0000)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [94/300][0/196]	Time 0.318 (0.318)	Loss 1.4916 (1.4916)	Top 1-err 35.9375 (35.9375)	Top 5-err 18.7500 (18.7500)
+* Epoch: [94/300]	 Top 1-err 40.340  Top 5-err 12.440	 Test Loss 1.480
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:01:36
+Epoch: [95/300][0/391]	LR: 0.100000	Time 0.400 (0.400)	Data 0.316 (0.316)	Loss 1.7470 (1.7470)	Top 1-err 18.7500 (18.7500)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [95/300][0/196]	Time 0.315 (0.315)	Loss 1.6168 (1.6168)	Top 1-err 42.1875 (42.1875)	Top 5-err 13.2812 (13.2812)
+* Epoch: [95/300]	 Top 1-err 40.920  Top 5-err 14.410	 Test Loss 1.541
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:02:50
+Epoch: [96/300][0/391]	LR: 0.100000	Time 0.410 (0.410)	Data 0.331 (0.331)	Loss 1.9575 (1.9575)	Top 1-err 30.4688 (30.4688)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [96/300][0/196]	Time 0.325 (0.325)	Loss 1.4659 (1.4659)	Top 1-err 42.9688 (42.9688)	Top 5-err 8.5938 (8.5938)
+* Epoch: [96/300]	 Top 1-err 42.220  Top 5-err 13.780	 Test Loss 1.588
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:04:03
+Epoch: [97/300][0/391]	LR: 0.100000	Time 0.385 (0.385)	Data 0.309 (0.309)	Loss 1.8135 (1.8135)	Top 1-err 23.4375 (23.4375)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [97/300][0/196]	Time 0.327 (0.327)	Loss 1.4589 (1.4589)	Top 1-err 42.1875 (42.1875)	Top 5-err 13.2812 (13.2812)
+* Epoch: [97/300]	 Top 1-err 38.760  Top 5-err 12.480	 Test Loss 1.459
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:05:17
+Epoch: [98/300][0/391]	LR: 0.100000	Time 0.405 (0.405)	Data 0.324 (0.324)	Loss 1.7808 (1.7808)	Top 1-err 20.3125 (20.3125)	Top 5-err 0.7812 (0.7812)
+Test (on val set): [98/300][0/196]	Time 0.326 (0.326)	Loss 1.4698 (1.4698)	Top 1-err 42.1875 (42.1875)	Top 5-err 13.2812 (13.2812)
+* Epoch: [98/300]	 Top 1-err 39.550  Top 5-err 13.230	 Test Loss 1.514
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:06:31
+Epoch: [99/300][0/391]	LR: 0.100000	Time 0.380 (0.380)	Data 0.295 (0.295)	Loss 1.8295 (1.8295)	Top 1-err 27.3438 (27.3438)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [99/300][0/196]	Time 0.334 (0.334)	Loss 1.4128 (1.4128)	Top 1-err 37.5000 (37.5000)	Top 5-err 11.7188 (11.7188)
+* Epoch: [99/300]	 Top 1-err 46.220  Top 5-err 17.350	 Test Loss 1.759
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:07:45
+Epoch: [100/300][0/391]	LR: 0.100000	Time 0.397 (0.397)	Data 0.317 (0.317)	Loss 1.9406 (1.9406)	Top 1-err 25.0000 (25.0000)	Top 5-err 7.8125 (7.8125)
+Test (on val set): [100/300][0/196]	Time 0.336 (0.336)	Loss 1.4853 (1.4853)	Top 1-err 39.8438 (39.8438)	Top 5-err 14.8438 (14.8438)
+* Epoch: [100/300]	 Top 1-err 40.500  Top 5-err 12.940	 Test Loss 1.491
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:08:58
+Epoch: [101/300][0/391]	LR: 0.100000	Time 0.399 (0.399)	Data 0.319 (0.319)	Loss 1.8971 (1.8971)	Top 1-err 25.0000 (25.0000)	Top 5-err 7.8125 (7.8125)
+Test (on val set): [101/300][0/196]	Time 0.325 (0.325)	Loss 1.4223 (1.4223)	Top 1-err 36.7188 (36.7188)	Top 5-err 8.5938 (8.5938)
+* Epoch: [101/300]	 Top 1-err 39.520  Top 5-err 12.980	 Test Loss 1.551
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:10:12
+Epoch: [102/300][0/391]	LR: 0.100000	Time 0.387 (0.387)	Data 0.310 (0.310)	Loss 1.9503 (1.9503)	Top 1-err 25.7812 (25.7812)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [102/300][0/196]	Time 0.324 (0.324)	Loss 1.6509 (1.6509)	Top 1-err 43.7500 (43.7500)	Top 5-err 13.2812 (13.2812)
+* Epoch: [102/300]	 Top 1-err 42.520  Top 5-err 14.850	 Test Loss 1.644
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:11:26
+Epoch: [103/300][0/391]	LR: 0.100000	Time 0.418 (0.418)	Data 0.338 (0.338)	Loss 1.8203 (1.8203)	Top 1-err 21.8750 (21.8750)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [103/300][0/196]	Time 0.329 (0.329)	Loss 1.5540 (1.5540)	Top 1-err 42.9688 (42.9688)	Top 5-err 12.5000 (12.5000)
+* Epoch: [103/300]	 Top 1-err 40.690  Top 5-err 13.260	 Test Loss 1.559
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:12:40
+Epoch: [104/300][0/391]	LR: 0.100000	Time 0.422 (0.422)	Data 0.339 (0.339)	Loss 1.7206 (1.7206)	Top 1-err 22.6562 (22.6562)	Top 5-err 0.7812 (0.7812)
+Test (on val set): [104/300][0/196]	Time 0.340 (0.340)	Loss 1.6148 (1.6148)	Top 1-err 42.1875 (42.1875)	Top 5-err 9.3750 (9.3750)
+* Epoch: [104/300]	 Top 1-err 40.840  Top 5-err 13.230	 Test Loss 1.525
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:13:53
+Epoch: [105/300][0/391]	LR: 0.100000	Time 0.410 (0.410)	Data 0.331 (0.331)	Loss 1.8713 (1.8713)	Top 1-err 28.9062 (28.9062)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [105/300][0/196]	Time 0.321 (0.321)	Loss 1.4373 (1.4373)	Top 1-err 39.0625 (39.0625)	Top 5-err 13.2812 (13.2812)
+* Epoch: [105/300]	 Top 1-err 41.920  Top 5-err 14.240	 Test Loss 1.584
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:15:07
+Epoch: [106/300][0/391]	LR: 0.100000	Time 0.418 (0.418)	Data 0.339 (0.339)	Loss 1.8492 (1.8492)	Top 1-err 25.7812 (25.7812)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [106/300][0/196]	Time 0.330 (0.330)	Loss 1.8044 (1.8044)	Top 1-err 44.5312 (44.5312)	Top 5-err 19.5312 (19.5312)
+* Epoch: [106/300]	 Top 1-err 44.260  Top 5-err 15.480	 Test Loss 1.677
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:16:21
+Epoch: [107/300][0/391]	LR: 0.100000	Time 0.387 (0.387)	Data 0.306 (0.306)	Loss 1.9024 (1.9024)	Top 1-err 29.6875 (29.6875)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [107/300][0/196]	Time 0.325 (0.325)	Loss 1.4341 (1.4341)	Top 1-err 35.9375 (35.9375)	Top 5-err 10.9375 (10.9375)
+* Epoch: [107/300]	 Top 1-err 40.880  Top 5-err 13.860	 Test Loss 1.538
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:17:35
+Epoch: [108/300][0/391]	LR: 0.100000	Time 0.418 (0.418)	Data 0.340 (0.340)	Loss 1.9065 (1.9065)	Top 1-err 25.0000 (25.0000)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [108/300][0/196]	Time 0.326 (0.326)	Loss 1.4103 (1.4103)	Top 1-err 38.2812 (38.2812)	Top 5-err 10.1562 (10.1562)
+* Epoch: [108/300]	 Top 1-err 40.870  Top 5-err 12.600	 Test Loss 1.519
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:18:49
+Epoch: [109/300][0/391]	LR: 0.100000	Time 0.403 (0.403)	Data 0.322 (0.322)	Loss 1.7960 (1.7960)	Top 1-err 22.6562 (22.6562)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [109/300][0/196]	Time 0.340 (0.340)	Loss 1.3983 (1.3983)	Top 1-err 36.7188 (36.7188)	Top 5-err 13.2812 (13.2812)
+* Epoch: [109/300]	 Top 1-err 39.090  Top 5-err 12.890	 Test Loss 1.447
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:20:02
+Epoch: [110/300][0/391]	LR: 0.100000	Time 0.388 (0.388)	Data 0.311 (0.311)	Loss 1.6506 (1.6506)	Top 1-err 17.1875 (17.1875)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [110/300][0/196]	Time 0.313 (0.313)	Loss 1.5367 (1.5367)	Top 1-err 39.8438 (39.8438)	Top 5-err 17.9688 (17.9688)
+* Epoch: [110/300]	 Top 1-err 41.460  Top 5-err 14.160	 Test Loss 1.547
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:21:16
+Epoch: [111/300][0/391]	LR: 0.100000	Time 0.408 (0.408)	Data 0.328 (0.328)	Loss 1.9395 (1.9395)	Top 1-err 28.1250 (28.1250)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [111/300][0/196]	Time 0.317 (0.317)	Loss 1.6944 (1.6944)	Top 1-err 43.7500 (43.7500)	Top 5-err 17.1875 (17.1875)
+* Epoch: [111/300]	 Top 1-err 45.460  Top 5-err 15.650	 Test Loss 1.710
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:22:30
+Epoch: [112/300][0/391]	LR: 0.100000	Time 0.383 (0.383)	Data 0.305 (0.305)	Loss 1.9237 (1.9237)	Top 1-err 27.3438 (27.3438)	Top 5-err 6.2500 (6.2500)
+Test (on val set): [112/300][0/196]	Time 0.330 (0.330)	Loss 1.4521 (1.4521)	Top 1-err 43.7500 (43.7500)	Top 5-err 13.2812 (13.2812)
+* Epoch: [112/300]	 Top 1-err 37.170  Top 5-err 11.330	 Test Loss 1.417
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:23:44
+Epoch: [113/300][0/391]	LR: 0.100000	Time 0.395 (0.395)	Data 0.318 (0.318)	Loss 1.8277 (1.8277)	Top 1-err 26.5625 (26.5625)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [113/300][0/196]	Time 0.342 (0.342)	Loss 1.6752 (1.6752)	Top 1-err 45.3125 (45.3125)	Top 5-err 15.6250 (15.6250)
+* Epoch: [113/300]	 Top 1-err 41.580  Top 5-err 13.120	 Test Loss 1.555
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:24:57
+Epoch: [114/300][0/391]	LR: 0.100000	Time 0.388 (0.388)	Data 0.308 (0.308)	Loss 1.8827 (1.8827)	Top 1-err 25.7812 (25.7812)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [114/300][0/196]	Time 0.333 (0.333)	Loss 1.3708 (1.3708)	Top 1-err 38.2812 (38.2812)	Top 5-err 8.5938 (8.5938)
+* Epoch: [114/300]	 Top 1-err 41.780  Top 5-err 13.970	 Test Loss 1.626
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:26:11
+Epoch: [115/300][0/391]	LR: 0.100000	Time 0.391 (0.391)	Data 0.313 (0.313)	Loss 1.6221 (1.6221)	Top 1-err 12.5000 (12.5000)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [115/300][0/196]	Time 0.316 (0.316)	Loss 1.7406 (1.7406)	Top 1-err 44.5312 (44.5312)	Top 5-err 17.1875 (17.1875)
+* Epoch: [115/300]	 Top 1-err 44.990  Top 5-err 16.480	 Test Loss 1.724
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:27:25
+Epoch: [116/300][0/391]	LR: 0.100000	Time 0.386 (0.386)	Data 0.309 (0.309)	Loss 1.7725 (1.7725)	Top 1-err 19.5312 (19.5312)	Top 5-err 0.7812 (0.7812)
+Test (on val set): [116/300][0/196]	Time 0.314 (0.314)	Loss 1.5269 (1.5269)	Top 1-err 44.5312 (44.5312)	Top 5-err 15.6250 (15.6250)
+* Epoch: [116/300]	 Top 1-err 38.990  Top 5-err 12.870	 Test Loss 1.490
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:28:39
+Epoch: [117/300][0/391]	LR: 0.100000	Time 0.418 (0.418)	Data 0.332 (0.332)	Loss 1.8379 (1.8379)	Top 1-err 21.0938 (21.0938)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [117/300][0/196]	Time 0.330 (0.330)	Loss 1.9938 (1.9938)	Top 1-err 52.3438 (52.3438)	Top 5-err 24.2188 (24.2188)
+* Epoch: [117/300]	 Top 1-err 43.130  Top 5-err 16.530	 Test Loss 1.691
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:29:52
+Epoch: [118/300][0/391]	LR: 0.100000	Time 0.407 (0.407)	Data 0.327 (0.327)	Loss 1.8896 (1.8896)	Top 1-err 19.5312 (19.5312)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [118/300][0/196]	Time 0.315 (0.315)	Loss 1.4475 (1.4475)	Top 1-err 39.8438 (39.8438)	Top 5-err 11.7188 (11.7188)
+* Epoch: [118/300]	 Top 1-err 40.480  Top 5-err 13.520	 Test Loss 1.519
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:31:06
+Epoch: [119/300][0/391]	LR: 0.100000	Time 0.398 (0.398)	Data 0.315 (0.315)	Loss 1.8805 (1.8805)	Top 1-err 25.0000 (25.0000)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [119/300][0/196]	Time 0.333 (0.333)	Loss 1.6715 (1.6715)	Top 1-err 47.6562 (47.6562)	Top 5-err 14.0625 (14.0625)
+* Epoch: [119/300]	 Top 1-err 42.580  Top 5-err 15.400	 Test Loss 1.627
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:32:20
+Epoch: [120/300][0/391]	LR: 0.100000	Time 0.400 (0.400)	Data 0.322 (0.322)	Loss 1.8086 (1.8086)	Top 1-err 24.2188 (24.2188)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [120/300][0/196]	Time 0.337 (0.337)	Loss 1.8003 (1.8003)	Top 1-err 48.4375 (48.4375)	Top 5-err 18.7500 (18.7500)
+* Epoch: [120/300]	 Top 1-err 47.890  Top 5-err 18.290	 Test Loss 1.832
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:33:33
+Epoch: [121/300][0/391]	LR: 0.100000	Time 0.401 (0.401)	Data 0.324 (0.324)	Loss 1.7720 (1.7720)	Top 1-err 22.6562 (22.6562)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [121/300][0/196]	Time 0.323 (0.323)	Loss 1.4208 (1.4208)	Top 1-err 35.9375 (35.9375)	Top 5-err 14.0625 (14.0625)
+* Epoch: [121/300]	 Top 1-err 38.650  Top 5-err 11.420	 Test Loss 1.414
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:34:47
+Epoch: [122/300][0/391]	LR: 0.100000	Time 0.414 (0.414)	Data 0.333 (0.333)	Loss 1.7484 (1.7484)	Top 1-err 20.3125 (20.3125)	Top 5-err 0.7812 (0.7812)
+Test (on val set): [122/300][0/196]	Time 0.350 (0.350)	Loss 1.3998 (1.3998)	Top 1-err 33.5938 (33.5938)	Top 5-err 13.2812 (13.2812)
+* Epoch: [122/300]	 Top 1-err 39.480  Top 5-err 13.180	 Test Loss 1.504
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:36:01
+Epoch: [123/300][0/391]	LR: 0.100000	Time 0.398 (0.398)	Data 0.318 (0.318)	Loss 1.7491 (1.7491)	Top 1-err 18.7500 (18.7500)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [123/300][0/196]	Time 0.329 (0.329)	Loss 1.4006 (1.4006)	Top 1-err 41.4062 (41.4062)	Top 5-err 9.3750 (9.3750)
+* Epoch: [123/300]	 Top 1-err 38.560  Top 5-err 12.390	 Test Loss 1.444
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:37:15
+Epoch: [124/300][0/391]	LR: 0.100000	Time 0.399 (0.399)	Data 0.314 (0.314)	Loss 1.9046 (1.9046)	Top 1-err 27.3438 (27.3438)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [124/300][0/196]	Time 0.326 (0.326)	Loss 1.8068 (1.8068)	Top 1-err 50.7812 (50.7812)	Top 5-err 14.8438 (14.8438)
+* Epoch: [124/300]	 Top 1-err 45.880  Top 5-err 14.810	 Test Loss 1.742
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:38:28
+Epoch: [125/300][0/391]	LR: 0.100000	Time 0.389 (0.389)	Data 0.308 (0.308)	Loss 1.7755 (1.7755)	Top 1-err 17.1875 (17.1875)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [125/300][0/196]	Time 0.315 (0.315)	Loss 1.4977 (1.4977)	Top 1-err 40.6250 (40.6250)	Top 5-err 11.7188 (11.7188)
+* Epoch: [125/300]	 Top 1-err 40.060  Top 5-err 13.790	 Test Loss 1.503
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:39:42
+Epoch: [126/300][0/391]	LR: 0.100000	Time 0.417 (0.417)	Data 0.332 (0.332)	Loss 1.8112 (1.8112)	Top 1-err 23.4375 (23.4375)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [126/300][0/196]	Time 0.335 (0.335)	Loss 1.6170 (1.6170)	Top 1-err 40.6250 (40.6250)	Top 5-err 12.5000 (12.5000)
+* Epoch: [126/300]	 Top 1-err 46.480  Top 5-err 17.640	 Test Loss 1.806
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:40:56
+Epoch: [127/300][0/391]	LR: 0.100000	Time 0.399 (0.399)	Data 0.315 (0.315)	Loss 1.8596 (1.8596)	Top 1-err 25.0000 (25.0000)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [127/300][0/196]	Time 0.334 (0.334)	Loss 1.4630 (1.4630)	Top 1-err 37.5000 (37.5000)	Top 5-err 13.2812 (13.2812)
+* Epoch: [127/300]	 Top 1-err 38.580  Top 5-err 11.560	 Test Loss 1.433
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:42:10
+Epoch: [128/300][0/391]	LR: 0.100000	Time 0.377 (0.377)	Data 0.299 (0.299)	Loss 1.8424 (1.8424)	Top 1-err 21.8750 (21.8750)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [128/300][0/196]	Time 0.335 (0.335)	Loss 2.2457 (2.2457)	Top 1-err 56.2500 (56.2500)	Top 5-err 25.7812 (25.7812)
+* Epoch: [128/300]	 Top 1-err 53.170  Top 5-err 23.410	 Test Loss 2.204
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:43:23
+Epoch: [129/300][0/391]	LR: 0.100000	Time 0.411 (0.411)	Data 0.330 (0.330)	Loss 1.7843 (1.7843)	Top 1-err 18.7500 (18.7500)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [129/300][0/196]	Time 0.330 (0.330)	Loss 1.4779 (1.4779)	Top 1-err 42.1875 (42.1875)	Top 5-err 16.4062 (16.4062)
+* Epoch: [129/300]	 Top 1-err 38.550  Top 5-err 12.140	 Test Loss 1.469
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:44:37
+Epoch: [130/300][0/391]	LR: 0.100000	Time 0.383 (0.383)	Data 0.306 (0.306)	Loss 1.7863 (1.7863)	Top 1-err 23.4375 (23.4375)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [130/300][0/196]	Time 0.332 (0.332)	Loss 1.6924 (1.6924)	Top 1-err 42.9688 (42.9688)	Top 5-err 17.9688 (17.9688)
+* Epoch: [130/300]	 Top 1-err 45.720  Top 5-err 17.480	 Test Loss 1.739
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:45:51
+Epoch: [131/300][0/391]	LR: 0.100000	Time 0.401 (0.401)	Data 0.322 (0.322)	Loss 1.7812 (1.7812)	Top 1-err 21.0938 (21.0938)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [131/300][0/196]	Time 0.319 (0.319)	Loss 1.7377 (1.7377)	Top 1-err 43.7500 (43.7500)	Top 5-err 17.9688 (17.9688)
+* Epoch: [131/300]	 Top 1-err 40.020  Top 5-err 14.170	 Test Loss 1.515
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:47:04
+Epoch: [132/300][0/391]	LR: 0.100000	Time 0.406 (0.406)	Data 0.326 (0.326)	Loss 1.7139 (1.7139)	Top 1-err 16.4062 (16.4062)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [132/300][0/196]	Time 0.334 (0.334)	Loss 1.7223 (1.7223)	Top 1-err 43.7500 (43.7500)	Top 5-err 21.8750 (21.8750)
+* Epoch: [132/300]	 Top 1-err 45.250  Top 5-err 16.340	 Test Loss 1.744
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:48:18
+Epoch: [133/300][0/391]	LR: 0.100000	Time 0.420 (0.420)	Data 0.346 (0.346)	Loss 1.8300 (1.8300)	Top 1-err 24.2188 (24.2188)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [133/300][0/196]	Time 0.335 (0.335)	Loss 1.5085 (1.5085)	Top 1-err 36.7188 (36.7188)	Top 5-err 14.8438 (14.8438)
+* Epoch: [133/300]	 Top 1-err 43.850  Top 5-err 14.760	 Test Loss 1.692
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:49:32
+Epoch: [134/300][0/391]	LR: 0.100000	Time 0.397 (0.397)	Data 0.311 (0.311)	Loss 1.7657 (1.7657)	Top 1-err 21.0938 (21.0938)	Top 5-err 3.9062 (3.9062)
+Test (on val set): [134/300][0/196]	Time 0.332 (0.332)	Loss 1.4092 (1.4092)	Top 1-err 35.1562 (35.1562)	Top 5-err 10.1562 (10.1562)
+* Epoch: [134/300]	 Top 1-err 37.920  Top 5-err 11.890	 Test Loss 1.468
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:50:46
+Epoch: [135/300][0/391]	LR: 0.100000	Time 0.425 (0.425)	Data 0.348 (0.348)	Loss 1.6855 (1.6855)	Top 1-err 15.6250 (15.6250)	Top 5-err 0.7812 (0.7812)
+Test (on val set): [135/300][0/196]	Time 0.328 (0.328)	Loss 1.4623 (1.4623)	Top 1-err 41.4062 (41.4062)	Top 5-err 10.1562 (10.1562)
+* Epoch: [135/300]	 Top 1-err 37.070  Top 5-err 11.260	 Test Loss 1.358
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:51:59
+Epoch: [136/300][0/391]	LR: 0.100000	Time 0.390 (0.390)	Data 0.313 (0.313)	Loss 1.9184 (1.9184)	Top 1-err 28.9062 (28.9062)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [136/300][0/196]	Time 0.328 (0.328)	Loss 1.4577 (1.4577)	Top 1-err 35.9375 (35.9375)	Top 5-err 14.0625 (14.0625)
+* Epoch: [136/300]	 Top 1-err 43.610  Top 5-err 15.260	 Test Loss 1.642
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:53:13
+Epoch: [137/300][0/391]	LR: 0.100000	Time 0.403 (0.403)	Data 0.323 (0.323)	Loss 1.8041 (1.8041)	Top 1-err 25.7812 (25.7812)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [137/300][0/196]	Time 0.318 (0.318)	Loss 1.3986 (1.3986)	Top 1-err 35.9375 (35.9375)	Top 5-err 11.7188 (11.7188)
+* Epoch: [137/300]	 Top 1-err 39.680  Top 5-err 12.580	 Test Loss 1.500
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:54:27
+Epoch: [138/300][0/391]	LR: 0.100000	Time 0.391 (0.391)	Data 0.308 (0.308)	Loss 1.8377 (1.8377)	Top 1-err 25.0000 (25.0000)	Top 5-err 8.5938 (8.5938)
+Test (on val set): [138/300][0/196]	Time 0.320 (0.320)	Loss 1.4635 (1.4635)	Top 1-err 42.9688 (42.9688)	Top 5-err 10.9375 (10.9375)
+* Epoch: [138/300]	 Top 1-err 44.100  Top 5-err 15.250	 Test Loss 1.636
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:55:40
+Epoch: [139/300][0/391]	LR: 0.100000	Time 0.381 (0.381)	Data 0.301 (0.301)	Loss 1.6774 (1.6774)	Top 1-err 15.6250 (15.6250)	Top 5-err 0.7812 (0.7812)
+Test (on val set): [139/300][0/196]	Time 0.322 (0.322)	Loss 1.6411 (1.6411)	Top 1-err 41.4062 (41.4062)	Top 5-err 14.8438 (14.8438)
+* Epoch: [139/300]	 Top 1-err 43.390  Top 5-err 15.590	 Test Loss 1.665
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:56:54
+Epoch: [140/300][0/391]	LR: 0.100000	Time 0.390 (0.390)	Data 0.313 (0.313)	Loss 1.7971 (1.7971)	Top 1-err 26.5625 (26.5625)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [140/300][0/196]	Time 0.329 (0.329)	Loss 1.5149 (1.5149)	Top 1-err 38.2812 (38.2812)	Top 5-err 14.0625 (14.0625)
+* Epoch: [140/300]	 Top 1-err 41.020  Top 5-err 14.500	 Test Loss 1.558
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:58:08
+Epoch: [141/300][0/391]	LR: 0.100000	Time 0.379 (0.379)	Data 0.298 (0.298)	Loss 1.7764 (1.7764)	Top 1-err 21.0938 (21.0938)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [141/300][0/196]	Time 0.344 (0.344)	Loss 1.3719 (1.3719)	Top 1-err 38.2812 (38.2812)	Top 5-err 12.5000 (12.5000)
+* Epoch: [141/300]	 Top 1-err 42.690  Top 5-err 14.860	 Test Loss 1.597
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 03:59:22
+Epoch: [142/300][0/391]	LR: 0.100000	Time 0.407 (0.407)	Data 0.326 (0.326)	Loss 1.7244 (1.7244)	Top 1-err 14.8438 (14.8438)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [142/300][0/196]	Time 0.333 (0.333)	Loss 1.5059 (1.5059)	Top 1-err 39.0625 (39.0625)	Top 5-err 14.8438 (14.8438)
+* Epoch: [142/300]	 Top 1-err 41.300  Top 5-err 13.330	 Test Loss 1.534
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 04:00:35
+Epoch: [143/300][0/391]	LR: 0.100000	Time 0.391 (0.391)	Data 0.314 (0.314)	Loss 1.8281 (1.8281)	Top 1-err 25.0000 (25.0000)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [143/300][0/196]	Time 0.335 (0.335)	Loss 1.5220 (1.5220)	Top 1-err 41.4062 (41.4062)	Top 5-err 8.5938 (8.5938)
+* Epoch: [143/300]	 Top 1-err 38.580  Top 5-err 11.130	 Test Loss 1.412
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 04:01:49
+Epoch: [144/300][0/391]	LR: 0.100000	Time 0.401 (0.401)	Data 0.323 (0.323)	Loss 1.7403 (1.7403)	Top 1-err 21.0938 (21.0938)	Top 5-err 2.3438 (2.3438)
+Test (on val set): [144/300][0/196]	Time 0.328 (0.328)	Loss 1.6765 (1.6765)	Top 1-err 42.1875 (42.1875)	Top 5-err 18.7500 (18.7500)
+* Epoch: [144/300]	 Top 1-err 45.740  Top 5-err 17.680	 Test Loss 1.765
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 04:03:03
+Epoch: [145/300][0/391]	LR: 0.100000	Time 0.374 (0.374)	Data 0.290 (0.290)	Loss 1.7231 (1.7231)	Top 1-err 22.6562 (22.6562)	Top 5-err 4.6875 (4.6875)
+Test (on val set): [145/300][0/196]	Time 0.324 (0.324)	Loss 2.1264 (2.1264)	Top 1-err 55.4688 (55.4688)	Top 5-err 20.3125 (20.3125)
+* Epoch: [145/300]	 Top 1-err 54.930  Top 5-err 25.430	 Test Loss 2.211
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 04:04:16
+Epoch: [146/300][0/391]	LR: 0.100000	Time 0.417 (0.417)	Data 0.341 (0.341)	Loss 1.6629 (1.6629)	Top 1-err 22.6562 (22.6562)	Top 5-err 1.5625 (1.5625)
+Test (on val set): [146/300][0/196]	Time 0.331 (0.331)	Loss 1.6006 (1.6006)	Top 1-err 41.4062 (41.4062)	Top 5-err 14.0625 (14.0625)
+* Epoch: [146/300]	 Top 1-err 45.040  Top 5-err 16.820	 Test Loss 1.722
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 04:05:30
+Epoch: [147/300][0/391]	LR: 0.100000	Time 0.400 (0.400)	Data 0.320 (0.320)	Loss 1.7938 (1.7938)	Top 1-err 25.7812 (25.7812)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [147/300][0/196]	Time 0.333 (0.333)	Loss 1.4262 (1.4262)	Top 1-err 39.0625 (39.0625)	Top 5-err 11.7188 (11.7188)
+* Epoch: [147/300]	 Top 1-err 46.200  Top 5-err 17.380	 Test Loss 1.746
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 04:06:44
+Epoch: [148/300][0/391]	LR: 0.100000	Time 0.399 (0.399)	Data 0.319 (0.319)	Loss 1.7400 (1.7400)	Top 1-err 21.8750 (21.8750)	Top 5-err 5.4688 (5.4688)
+Test (on val set): [148/300][0/196]	Time 0.319 (0.319)	Loss 1.4627 (1.4627)	Top 1-err 39.8438 (39.8438)	Top 5-err 7.8125 (7.8125)
+* Epoch: [148/300]	 Top 1-err 38.110  Top 5-err 11.350	 Test Loss 1.430
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 04:07:58
+Epoch: [149/300][0/391]	LR: 0.100000	Time 0.405 (0.405)	Data 0.325 (0.325)	Loss 1.7639 (1.7639)	Top 1-err 19.5312 (19.5312)	Top 5-err 7.0312 (7.0312)
+Test (on val set): [149/300][0/196]	Time 0.318 (0.318)	Loss 1.5763 (1.5763)	Top 1-err 39.8438 (39.8438)	Top 5-err 14.8438 (14.8438)
+* Epoch: [149/300]	 Top 1-err 40.800  Top 5-err 12.980	 Test Loss 1.527
+Current best accuracy (top-1 and 5 error): 37.06 11.0
+current os time =  2022-04-30 04:09:11
+Epoch: [150/300][0/391]	LR: 0.010000	Time 0.399 (0.399)	Data 0.317 (0.317)	Loss 1.7816 (1.7816)	Top 1-err 16.4062 (16.4062)	Top 5-err 3.1250 (3.1250)
+Test (on val set): [150/300][0/196]	Time 0.323 (0.323)	Loss 0.9326 (0.9326)	Top 1-err 25.7812 (25.7812)	Top 5-err 4.6875 (4.6875)
+* Epoch: [150/300]	 Top 1-err 21.530  Top 5-err 4.720	 Test Loss 0.842
+Current best accuracy (top-1 and 5 error): 21.53 4.72
+current os time =  2022-04-30 04:10:26
+Epoch: [151/300][0/391]	LR: 0.010000	Time 0.396 (0.396)	Data 0.317 (0.317)	Loss 1.3334 (1.3334)	Top 1-err 13.2812 (13.2812)	Top 5-err 0.7812 (0.7812)
+Test (on val set): [151/300][0/196]	Time 0.328 (0.328)	Loss 0.7002 (0.7002)	Top 1-err 15.6250 (15.6250)	Top 5-err 3.1250 (3.1250)
+* Epoch: [151/300]	 Top 1-err 20.800  Top 5-err 4.380	 Test Loss 0.797
+Current best accuracy (top-1 and 5 error): 20.8 4.38
+current os time =  2022-04-30 04:11:41
+Epoch: [152/300][0/391]	LR: 0.010000	Time 0.396 (0.396)	Data 0.316 (0.316)	Loss 1.1960 (1.1960)	Top 1-err 5.4688 (5.4688)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [152/300][0/196]	Time 0.317 (0.317)	Loss 0.6998 (0.6998)	Top 1-err 15.6250 (15.6250)	Top 5-err 3.9062 (3.9062)
+* Epoch: [152/300]	 Top 1-err 20.740  Top 5-err 4.520	 Test Loss 0.774
+Current best accuracy (top-1 and 5 error): 20.74 4.52
+current os time =  2022-04-30 04:12:56
+Epoch: [153/300][0/391]	LR: 0.010000	Time 0.408 (0.408)	Data 0.331 (0.331)	Loss 1.0592 (1.0592)	Top 1-err 5.4688 (5.4688)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [153/300][0/196]	Time 0.321 (0.321)	Loss 0.7129 (0.7129)	Top 1-err 21.0938 (21.0938)	Top 5-err 3.1250 (3.1250)
+* Epoch: [153/300]	 Top 1-err 20.530  Top 5-err 4.460	 Test Loss 0.771
+Current best accuracy (top-1 and 5 error): 20.53 4.46
+current os time =  2022-04-30 04:14:11
+Epoch: [154/300][0/391]	LR: 0.010000	Time 0.415 (0.415)	Data 0.338 (0.338)	Loss 1.0392 (1.0392)	Top 1-err 7.0312 (7.0312)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [154/300][0/196]	Time 0.326 (0.326)	Loss 0.5630 (0.5630)	Top 1-err 15.6250 (15.6250)	Top 5-err 0.7812 (0.7812)
+* Epoch: [154/300]	 Top 1-err 20.510  Top 5-err 4.460	 Test Loss 0.760
+Current best accuracy (top-1 and 5 error): 20.51 4.46
+current os time =  2022-04-30 04:15:26
+Epoch: [155/300][0/391]	LR: 0.010000	Time 0.397 (0.397)	Data 0.319 (0.319)	Loss 0.9702 (0.9702)	Top 1-err 3.9062 (3.9062)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [155/300][0/196]	Time 0.324 (0.324)	Loss 0.6809 (0.6809)	Top 1-err 19.5312 (19.5312)	Top 5-err 3.9062 (3.9062)
+* Epoch: [155/300]	 Top 1-err 20.940  Top 5-err 4.510	 Test Loss 0.766
+Current best accuracy (top-1 and 5 error): 20.51 4.46
+current os time =  2022-04-30 04:16:40
+Epoch: [156/300][0/391]	LR: 0.010000	Time 0.408 (0.408)	Data 0.326 (0.326)	Loss 0.8380 (0.8380)	Top 1-err 2.3438 (2.3438)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [156/300][0/196]	Time 0.328 (0.328)	Loss 0.6892 (0.6892)	Top 1-err 19.5312 (19.5312)	Top 5-err 4.6875 (4.6875)
+* Epoch: [156/300]	 Top 1-err 20.430  Top 5-err 4.570	 Test Loss 0.752
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:17:55
+Epoch: [157/300][0/391]	LR: 0.010000	Time 0.391 (0.391)	Data 0.309 (0.309)	Loss 0.8315 (0.8315)	Top 1-err 2.3438 (2.3438)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [157/300][0/196]	Time 0.316 (0.316)	Loss 0.8771 (0.8771)	Top 1-err 26.5625 (26.5625)	Top 5-err 7.0312 (7.0312)
+* Epoch: [157/300]	 Top 1-err 20.430  Top 5-err 4.570	 Test Loss 0.756
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:19:10
+Epoch: [158/300][0/391]	LR: 0.010000	Time 0.389 (0.389)	Data 0.308 (0.308)	Loss 0.7805 (0.7805)	Top 1-err 3.1250 (3.1250)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [158/300][0/196]	Time 0.315 (0.315)	Loss 0.7137 (0.7137)	Top 1-err 17.9688 (17.9688)	Top 5-err 2.3438 (2.3438)
+* Epoch: [158/300]	 Top 1-err 20.610  Top 5-err 4.650	 Test Loss 0.757
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:20:25
+Epoch: [159/300][0/391]	LR: 0.010000	Time 0.396 (0.396)	Data 0.313 (0.313)	Loss 0.7388 (0.7388)	Top 1-err 2.3438 (2.3438)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [159/300][0/196]	Time 0.331 (0.331)	Loss 0.7145 (0.7145)	Top 1-err 18.7500 (18.7500)	Top 5-err 4.6875 (4.6875)
+* Epoch: [159/300]	 Top 1-err 20.480  Top 5-err 4.520	 Test Loss 0.756
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:21:39
+Epoch: [160/300][0/391]	LR: 0.010000	Time 0.424 (0.424)	Data 0.336 (0.336)	Loss 0.6966 (0.6966)	Top 1-err 2.3438 (2.3438)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [160/300][0/196]	Time 0.329 (0.329)	Loss 0.9339 (0.9339)	Top 1-err 21.8750 (21.8750)	Top 5-err 5.4688 (5.4688)
+* Epoch: [160/300]	 Top 1-err 21.000  Top 5-err 4.840	 Test Loss 0.771
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:22:54
+Epoch: [161/300][0/391]	LR: 0.010000	Time 0.401 (0.401)	Data 0.317 (0.317)	Loss 0.6512 (0.6512)	Top 1-err 1.5625 (1.5625)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [161/300][0/196]	Time 0.323 (0.323)	Loss 0.6845 (0.6845)	Top 1-err 17.9688 (17.9688)	Top 5-err 6.2500 (6.2500)
+* Epoch: [161/300]	 Top 1-err 20.870  Top 5-err 4.640	 Test Loss 0.763
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:24:08
+Epoch: [162/300][0/391]	LR: 0.010000	Time 0.427 (0.427)	Data 0.344 (0.344)	Loss 0.6189 (0.6189)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [162/300][0/196]	Time 0.316 (0.316)	Loss 0.7793 (0.7793)	Top 1-err 24.2188 (24.2188)	Top 5-err 3.9062 (3.9062)
+* Epoch: [162/300]	 Top 1-err 20.950  Top 5-err 4.680	 Test Loss 0.768
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:25:23
+Epoch: [163/300][0/391]	LR: 0.010000	Time 0.381 (0.381)	Data 0.299 (0.299)	Loss 0.5648 (0.5648)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [163/300][0/196]	Time 0.326 (0.326)	Loss 0.7806 (0.7806)	Top 1-err 21.0938 (21.0938)	Top 5-err 2.3438 (2.3438)
+* Epoch: [163/300]	 Top 1-err 20.710  Top 5-err 4.590	 Test Loss 0.768
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:26:38
+Epoch: [164/300][0/391]	LR: 0.010000	Time 0.376 (0.376)	Data 0.295 (0.295)	Loss 0.5698 (0.5698)	Top 1-err 1.5625 (1.5625)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [164/300][0/196]	Time 0.323 (0.323)	Loss 0.7280 (0.7280)	Top 1-err 17.1875 (17.1875)	Top 5-err 3.9062 (3.9062)
+* Epoch: [164/300]	 Top 1-err 21.040  Top 5-err 4.790	 Test Loss 0.777
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:27:52
+Epoch: [165/300][0/391]	LR: 0.010000	Time 0.414 (0.414)	Data 0.335 (0.335)	Loss 0.5571 (0.5571)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [165/300][0/196]	Time 0.316 (0.316)	Loss 0.8634 (0.8634)	Top 1-err 26.5625 (26.5625)	Top 5-err 4.6875 (4.6875)
+* Epoch: [165/300]	 Top 1-err 20.780  Top 5-err 4.640	 Test Loss 0.768
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:29:07
+Epoch: [166/300][0/391]	LR: 0.010000	Time 0.406 (0.406)	Data 0.329 (0.329)	Loss 0.5423 (0.5423)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [166/300][0/196]	Time 0.326 (0.326)	Loss 0.6444 (0.6444)	Top 1-err 14.8438 (14.8438)	Top 5-err 4.6875 (4.6875)
+* Epoch: [166/300]	 Top 1-err 20.820  Top 5-err 4.520	 Test Loss 0.756
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:30:22
+Epoch: [167/300][0/391]	LR: 0.010000	Time 0.407 (0.407)	Data 0.319 (0.319)	Loss 0.5279 (0.5279)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [167/300][0/196]	Time 0.332 (0.332)	Loss 0.5877 (0.5877)	Top 1-err 14.0625 (14.0625)	Top 5-err 3.1250 (3.1250)
+* Epoch: [167/300]	 Top 1-err 21.050  Top 5-err 4.770	 Test Loss 0.770
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:31:36
+Epoch: [168/300][0/391]	LR: 0.010000	Time 0.385 (0.385)	Data 0.295 (0.295)	Loss 0.4779 (0.4779)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [168/300][0/196]	Time 0.320 (0.320)	Loss 0.7448 (0.7448)	Top 1-err 18.7500 (18.7500)	Top 5-err 6.2500 (6.2500)
+* Epoch: [168/300]	 Top 1-err 21.360  Top 5-err 4.900	 Test Loss 0.788
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:32:51
+Epoch: [169/300][0/391]	LR: 0.010000	Time 0.392 (0.392)	Data 0.313 (0.313)	Loss 0.4649 (0.4649)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [169/300][0/196]	Time 0.331 (0.331)	Loss 0.6684 (0.6684)	Top 1-err 20.3125 (20.3125)	Top 5-err 3.1250 (3.1250)
+* Epoch: [169/300]	 Top 1-err 21.520  Top 5-err 4.930	 Test Loss 0.782
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:34:06
+Epoch: [170/300][0/391]	LR: 0.010000	Time 0.419 (0.419)	Data 0.333 (0.333)	Loss 0.4639 (0.4639)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [170/300][0/196]	Time 0.327 (0.327)	Loss 0.6489 (0.6489)	Top 1-err 17.9688 (17.9688)	Top 5-err 1.5625 (1.5625)
+* Epoch: [170/300]	 Top 1-err 21.370  Top 5-err 5.140	 Test Loss 0.796
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:35:20
+Epoch: [171/300][0/391]	LR: 0.010000	Time 0.396 (0.396)	Data 0.312 (0.312)	Loss 0.4421 (0.4421)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [171/300][0/196]	Time 0.333 (0.333)	Loss 0.7405 (0.7405)	Top 1-err 19.5312 (19.5312)	Top 5-err 7.0312 (7.0312)
+* Epoch: [171/300]	 Top 1-err 21.060  Top 5-err 4.760	 Test Loss 0.778
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:36:35
+Epoch: [172/300][0/391]	LR: 0.010000	Time 0.380 (0.380)	Data 0.297 (0.297)	Loss 0.4434 (0.4434)	Top 1-err 1.5625 (1.5625)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [172/300][0/196]	Time 0.317 (0.317)	Loss 0.6952 (0.6952)	Top 1-err 16.4062 (16.4062)	Top 5-err 7.0312 (7.0312)
+* Epoch: [172/300]	 Top 1-err 21.600  Top 5-err 4.720	 Test Loss 0.793
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:37:50
+Epoch: [173/300][0/391]	LR: 0.010000	Time 0.410 (0.410)	Data 0.327 (0.327)	Loss 0.4619 (0.4619)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [173/300][0/196]	Time 0.318 (0.318)	Loss 0.8891 (0.8891)	Top 1-err 25.0000 (25.0000)	Top 5-err 3.9062 (3.9062)
+* Epoch: [173/300]	 Top 1-err 21.490  Top 5-err 4.880	 Test Loss 0.793
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:39:04
+Epoch: [174/300][0/391]	LR: 0.010000	Time 0.404 (0.404)	Data 0.325 (0.325)	Loss 0.4535 (0.4535)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [174/300][0/196]	Time 0.322 (0.322)	Loss 0.7619 (0.7619)	Top 1-err 25.7812 (25.7812)	Top 5-err 1.5625 (1.5625)
+* Epoch: [174/300]	 Top 1-err 21.870  Top 5-err 4.970	 Test Loss 0.808
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:40:19
+Epoch: [175/300][0/391]	LR: 0.010000	Time 0.392 (0.392)	Data 0.313 (0.313)	Loss 0.4323 (0.4323)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [175/300][0/196]	Time 0.326 (0.326)	Loss 0.7523 (0.7523)	Top 1-err 22.6562 (22.6562)	Top 5-err 3.1250 (3.1250)
+* Epoch: [175/300]	 Top 1-err 21.510  Top 5-err 4.790	 Test Loss 0.789
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:41:34
+Epoch: [176/300][0/391]	LR: 0.010000	Time 0.416 (0.416)	Data 0.335 (0.335)	Loss 0.4497 (0.4497)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [176/300][0/196]	Time 0.322 (0.322)	Loss 1.0686 (1.0686)	Top 1-err 29.6875 (29.6875)	Top 5-err 4.6875 (4.6875)
+* Epoch: [176/300]	 Top 1-err 21.880  Top 5-err 4.780	 Test Loss 0.791
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:42:48
+Epoch: [177/300][0/391]	LR: 0.010000	Time 0.422 (0.422)	Data 0.341 (0.341)	Loss 0.4361 (0.4361)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [177/300][0/196]	Time 0.314 (0.314)	Loss 0.7251 (0.7251)	Top 1-err 17.9688 (17.9688)	Top 5-err 4.6875 (4.6875)
+* Epoch: [177/300]	 Top 1-err 22.020  Top 5-err 4.900	 Test Loss 0.803
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:44:03
+Epoch: [178/300][0/391]	LR: 0.010000	Time 0.385 (0.385)	Data 0.291 (0.291)	Loss 0.4185 (0.4185)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [178/300][0/196]	Time 0.335 (0.335)	Loss 0.8046 (0.8046)	Top 1-err 20.3125 (20.3125)	Top 5-err 3.9062 (3.9062)
+* Epoch: [178/300]	 Top 1-err 21.990  Top 5-err 5.030	 Test Loss 0.811
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:45:18
+Epoch: [179/300][0/391]	LR: 0.010000	Time 0.403 (0.403)	Data 0.320 (0.320)	Loss 0.4283 (0.4283)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [179/300][0/196]	Time 0.324 (0.324)	Loss 0.7519 (0.7519)	Top 1-err 20.3125 (20.3125)	Top 5-err 3.1250 (3.1250)
+* Epoch: [179/300]	 Top 1-err 21.590  Top 5-err 4.920	 Test Loss 0.797
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:46:32
+Epoch: [180/300][0/391]	LR: 0.010000	Time 0.411 (0.411)	Data 0.330 (0.330)	Loss 0.4150 (0.4150)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [180/300][0/196]	Time 0.331 (0.331)	Loss 0.9958 (0.9958)	Top 1-err 25.7812 (25.7812)	Top 5-err 7.0312 (7.0312)
+* Epoch: [180/300]	 Top 1-err 23.180  Top 5-err 5.690	 Test Loss 0.875
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:47:47
+Epoch: [181/300][0/391]	LR: 0.010000	Time 0.421 (0.421)	Data 0.341 (0.341)	Loss 0.4237 (0.4237)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [181/300][0/196]	Time 0.319 (0.319)	Loss 0.9842 (0.9842)	Top 1-err 26.5625 (26.5625)	Top 5-err 7.0312 (7.0312)
+* Epoch: [181/300]	 Top 1-err 22.370  Top 5-err 5.390	 Test Loss 0.834
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:49:02
+Epoch: [182/300][0/391]	LR: 0.010000	Time 0.396 (0.396)	Data 0.308 (0.308)	Loss 0.4210 (0.4210)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [182/300][0/196]	Time 0.333 (0.333)	Loss 0.7946 (0.7946)	Top 1-err 17.9688 (17.9688)	Top 5-err 9.3750 (9.3750)
+* Epoch: [182/300]	 Top 1-err 22.290  Top 5-err 5.360	 Test Loss 0.832
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:50:16
+Epoch: [183/300][0/391]	LR: 0.010000	Time 0.377 (0.377)	Data 0.296 (0.296)	Loss 0.4109 (0.4109)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [183/300][0/196]	Time 0.327 (0.327)	Loss 0.9911 (0.9911)	Top 1-err 25.0000 (25.0000)	Top 5-err 5.4688 (5.4688)
+* Epoch: [183/300]	 Top 1-err 21.820  Top 5-err 5.190	 Test Loss 0.822
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:51:31
+Epoch: [184/300][0/391]	LR: 0.010000	Time 0.411 (0.411)	Data 0.331 (0.331)	Loss 0.4501 (0.4501)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [184/300][0/196]	Time 0.326 (0.326)	Loss 0.8825 (0.8825)	Top 1-err 27.3438 (27.3438)	Top 5-err 7.0312 (7.0312)
+* Epoch: [184/300]	 Top 1-err 23.230  Top 5-err 5.580	 Test Loss 0.860
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:52:45
+Epoch: [185/300][0/391]	LR: 0.010000	Time 0.386 (0.386)	Data 0.307 (0.307)	Loss 0.4392 (0.4392)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [185/300][0/196]	Time 0.324 (0.324)	Loss 0.9016 (0.9016)	Top 1-err 26.5625 (26.5625)	Top 5-err 6.2500 (6.2500)
+* Epoch: [185/300]	 Top 1-err 23.040  Top 5-err 5.480	 Test Loss 0.854
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:54:00
+Epoch: [186/300][0/391]	LR: 0.010000	Time 0.421 (0.421)	Data 0.335 (0.335)	Loss 0.4495 (0.4495)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [186/300][0/196]	Time 0.316 (0.316)	Loss 0.7991 (0.7991)	Top 1-err 22.6562 (22.6562)	Top 5-err 5.4688 (5.4688)
+* Epoch: [186/300]	 Top 1-err 23.760  Top 5-err 5.550	 Test Loss 0.875
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:55:15
+Epoch: [187/300][0/391]	LR: 0.010000	Time 0.398 (0.398)	Data 0.308 (0.308)	Loss 0.4379 (0.4379)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [187/300][0/196]	Time 0.316 (0.316)	Loss 0.7936 (0.7936)	Top 1-err 19.5312 (19.5312)	Top 5-err 3.1250 (3.1250)
+* Epoch: [187/300]	 Top 1-err 22.630  Top 5-err 5.520	 Test Loss 0.847
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:56:29
+Epoch: [188/300][0/391]	LR: 0.010000	Time 0.407 (0.407)	Data 0.324 (0.324)	Loss 0.4500 (0.4500)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [188/300][0/196]	Time 0.326 (0.326)	Loss 0.7943 (0.7943)	Top 1-err 23.4375 (23.4375)	Top 5-err 3.9062 (3.9062)
+* Epoch: [188/300]	 Top 1-err 22.470  Top 5-err 5.510	 Test Loss 0.830
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:57:44
+Epoch: [189/300][0/391]	LR: 0.010000	Time 0.393 (0.393)	Data 0.310 (0.310)	Loss 0.4681 (0.4681)	Top 1-err 1.5625 (1.5625)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [189/300][0/196]	Time 0.315 (0.315)	Loss 0.9585 (0.9585)	Top 1-err 26.5625 (26.5625)	Top 5-err 5.4688 (5.4688)
+* Epoch: [189/300]	 Top 1-err 23.450  Top 5-err 5.370	 Test Loss 0.869
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 04:58:59
+Epoch: [190/300][0/391]	LR: 0.010000	Time 0.384 (0.384)	Data 0.294 (0.294)	Loss 0.4546 (0.4546)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [190/300][0/196]	Time 0.337 (0.337)	Loss 0.9496 (0.9496)	Top 1-err 26.5625 (26.5625)	Top 5-err 6.2500 (6.2500)
+* Epoch: [190/300]	 Top 1-err 22.730  Top 5-err 5.350	 Test Loss 0.856
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:00:13
+Epoch: [191/300][0/391]	LR: 0.010000	Time 0.408 (0.408)	Data 0.319 (0.319)	Loss 0.4766 (0.4766)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [191/300][0/196]	Time 0.326 (0.326)	Loss 0.9197 (0.9197)	Top 1-err 21.8750 (21.8750)	Top 5-err 6.2500 (6.2500)
+* Epoch: [191/300]	 Top 1-err 24.240  Top 5-err 6.080	 Test Loss 0.901
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:01:28
+Epoch: [192/300][0/391]	LR: 0.010000	Time 0.399 (0.399)	Data 0.315 (0.315)	Loss 0.4439 (0.4439)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [192/300][0/196]	Time 0.330 (0.330)	Loss 0.9986 (0.9986)	Top 1-err 24.2188 (24.2188)	Top 5-err 3.1250 (3.1250)
+* Epoch: [192/300]	 Top 1-err 24.060  Top 5-err 5.710	 Test Loss 0.888
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:02:43
+Epoch: [193/300][0/391]	LR: 0.010000	Time 0.431 (0.431)	Data 0.340 (0.340)	Loss 0.4833 (0.4833)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [193/300][0/196]	Time 0.338 (0.338)	Loss 0.8981 (0.8981)	Top 1-err 23.4375 (23.4375)	Top 5-err 3.1250 (3.1250)
+* Epoch: [193/300]	 Top 1-err 24.310  Top 5-err 5.920	 Test Loss 0.900
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:03:58
+Epoch: [194/300][0/391]	LR: 0.010000	Time 0.391 (0.391)	Data 0.311 (0.311)	Loss 0.4943 (0.4943)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [194/300][0/196]	Time 0.315 (0.315)	Loss 0.8597 (0.8597)	Top 1-err 27.3438 (27.3438)	Top 5-err 3.1250 (3.1250)
+* Epoch: [194/300]	 Top 1-err 24.720  Top 5-err 6.070	 Test Loss 0.921
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:05:12
+Epoch: [195/300][0/391]	LR: 0.010000	Time 0.418 (0.418)	Data 0.337 (0.337)	Loss 0.5033 (0.5033)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [195/300][0/196]	Time 0.327 (0.327)	Loss 0.8658 (0.8658)	Top 1-err 25.0000 (25.0000)	Top 5-err 7.0312 (7.0312)
+* Epoch: [195/300]	 Top 1-err 23.980  Top 5-err 5.910	 Test Loss 0.886
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:06:27
+Epoch: [196/300][0/391]	LR: 0.010000	Time 0.403 (0.403)	Data 0.319 (0.319)	Loss 0.4720 (0.4720)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [196/300][0/196]	Time 0.333 (0.333)	Loss 0.7666 (0.7666)	Top 1-err 23.4375 (23.4375)	Top 5-err 3.9062 (3.9062)
+* Epoch: [196/300]	 Top 1-err 23.450  Top 5-err 5.690	 Test Loss 0.886
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:07:42
+Epoch: [197/300][0/391]	LR: 0.010000	Time 0.413 (0.413)	Data 0.330 (0.330)	Loss 0.4907 (0.4907)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [197/300][0/196]	Time 0.330 (0.330)	Loss 1.0786 (1.0786)	Top 1-err 27.3438 (27.3438)	Top 5-err 12.5000 (12.5000)
+* Epoch: [197/300]	 Top 1-err 24.620  Top 5-err 6.260	 Test Loss 0.921
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:08:56
+Epoch: [198/300][0/391]	LR: 0.010000	Time 0.397 (0.397)	Data 0.316 (0.316)	Loss 0.5127 (0.5127)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [198/300][0/196]	Time 0.326 (0.326)	Loss 1.0713 (1.0713)	Top 1-err 26.5625 (26.5625)	Top 5-err 5.4688 (5.4688)
+* Epoch: [198/300]	 Top 1-err 24.110  Top 5-err 5.990	 Test Loss 0.901
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:10:11
+Epoch: [199/300][0/391]	LR: 0.010000	Time 0.401 (0.401)	Data 0.317 (0.317)	Loss 0.4989 (0.4989)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [199/300][0/196]	Time 0.322 (0.322)	Loss 1.1376 (1.1376)	Top 1-err 27.3438 (27.3438)	Top 5-err 9.3750 (9.3750)
+* Epoch: [199/300]	 Top 1-err 24.570  Top 5-err 6.160	 Test Loss 0.917
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:11:26
+Epoch: [200/300][0/391]	LR: 0.010000	Time 0.412 (0.412)	Data 0.329 (0.329)	Loss 0.5234 (0.5234)	Top 1-err 1.5625 (1.5625)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [200/300][0/196]	Time 0.341 (0.341)	Loss 0.9543 (0.9543)	Top 1-err 27.3438 (27.3438)	Top 5-err 4.6875 (4.6875)
+* Epoch: [200/300]	 Top 1-err 24.880  Top 5-err 6.610	 Test Loss 0.947
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:12:40
+Epoch: [201/300][0/391]	LR: 0.010000	Time 0.415 (0.415)	Data 0.322 (0.322)	Loss 0.4958 (0.4958)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [201/300][0/196]	Time 0.323 (0.323)	Loss 0.8064 (0.8064)	Top 1-err 19.5312 (19.5312)	Top 5-err 4.6875 (4.6875)
+* Epoch: [201/300]	 Top 1-err 26.030  Top 5-err 6.280	 Test Loss 0.978
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:13:55
+Epoch: [202/300][0/391]	LR: 0.010000	Time 0.397 (0.397)	Data 0.314 (0.314)	Loss 0.4769 (0.4769)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [202/300][0/196]	Time 0.329 (0.329)	Loss 0.8882 (0.8882)	Top 1-err 24.2188 (24.2188)	Top 5-err 4.6875 (4.6875)
+* Epoch: [202/300]	 Top 1-err 24.030  Top 5-err 6.070	 Test Loss 0.912
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:15:10
+Epoch: [203/300][0/391]	LR: 0.010000	Time 0.433 (0.433)	Data 0.353 (0.353)	Loss 0.4979 (0.4979)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [203/300][0/196]	Time 0.315 (0.315)	Loss 0.9612 (0.9612)	Top 1-err 27.3438 (27.3438)	Top 5-err 7.0312 (7.0312)
+* Epoch: [203/300]	 Top 1-err 24.930  Top 5-err 5.800	 Test Loss 0.925
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:16:24
+Epoch: [204/300][0/391]	LR: 0.010000	Time 0.395 (0.395)	Data 0.314 (0.314)	Loss 0.5005 (0.5005)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [204/300][0/196]	Time 0.334 (0.334)	Loss 0.8069 (0.8069)	Top 1-err 23.4375 (23.4375)	Top 5-err 5.4688 (5.4688)
+* Epoch: [204/300]	 Top 1-err 24.260  Top 5-err 6.030	 Test Loss 0.900
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:17:39
+Epoch: [205/300][0/391]	LR: 0.010000	Time 0.397 (0.397)	Data 0.316 (0.316)	Loss 0.4979 (0.4979)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [205/300][0/196]	Time 0.331 (0.331)	Loss 0.8665 (0.8665)	Top 1-err 22.6562 (22.6562)	Top 5-err 4.6875 (4.6875)
+* Epoch: [205/300]	 Top 1-err 24.720  Top 5-err 6.200	 Test Loss 0.923
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:18:54
+Epoch: [206/300][0/391]	LR: 0.010000	Time 0.401 (0.401)	Data 0.320 (0.320)	Loss 0.4913 (0.4913)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [206/300][0/196]	Time 0.324 (0.324)	Loss 0.9369 (0.9369)	Top 1-err 25.0000 (25.0000)	Top 5-err 6.2500 (6.2500)
+* Epoch: [206/300]	 Top 1-err 24.890  Top 5-err 6.320	 Test Loss 0.941
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:20:08
+Epoch: [207/300][0/391]	LR: 0.010000	Time 0.381 (0.381)	Data 0.298 (0.298)	Loss 0.4764 (0.4764)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [207/300][0/196]	Time 0.321 (0.321)	Loss 1.1858 (1.1858)	Top 1-err 27.3438 (27.3438)	Top 5-err 14.0625 (14.0625)
+* Epoch: [207/300]	 Top 1-err 24.460  Top 5-err 6.320	 Test Loss 0.921
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:21:23
+Epoch: [208/300][0/391]	LR: 0.010000	Time 0.408 (0.408)	Data 0.323 (0.323)	Loss 0.4907 (0.4907)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [208/300][0/196]	Time 0.329 (0.329)	Loss 0.8542 (0.8542)	Top 1-err 19.5312 (19.5312)	Top 5-err 3.1250 (3.1250)
+* Epoch: [208/300]	 Top 1-err 24.510  Top 5-err 6.210	 Test Loss 0.916
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:22:37
+Epoch: [209/300][0/391]	LR: 0.010000	Time 0.412 (0.412)	Data 0.329 (0.329)	Loss 0.4897 (0.4897)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [209/300][0/196]	Time 0.318 (0.318)	Loss 1.0580 (1.0580)	Top 1-err 29.6875 (29.6875)	Top 5-err 6.2500 (6.2500)
+* Epoch: [209/300]	 Top 1-err 23.830  Top 5-err 5.860	 Test Loss 0.903
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:23:52
+Epoch: [210/300][0/391]	LR: 0.010000	Time 0.403 (0.403)	Data 0.323 (0.323)	Loss 0.5325 (0.5325)	Top 1-err 1.5625 (1.5625)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [210/300][0/196]	Time 0.327 (0.327)	Loss 0.8750 (0.8750)	Top 1-err 25.0000 (25.0000)	Top 5-err 6.2500 (6.2500)
+* Epoch: [210/300]	 Top 1-err 25.540  Top 5-err 6.290	 Test Loss 0.944
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:25:07
+Epoch: [211/300][0/391]	LR: 0.010000	Time 0.405 (0.405)	Data 0.321 (0.321)	Loss 0.4674 (0.4674)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [211/300][0/196]	Time 0.324 (0.324)	Loss 1.1071 (1.1071)	Top 1-err 31.2500 (31.2500)	Top 5-err 7.8125 (7.8125)
+* Epoch: [211/300]	 Top 1-err 24.880  Top 5-err 5.930	 Test Loss 0.908
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:26:21
+Epoch: [212/300][0/391]	LR: 0.010000	Time 0.403 (0.403)	Data 0.323 (0.323)	Loss 0.4852 (0.4852)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [212/300][0/196]	Time 0.314 (0.314)	Loss 1.0671 (1.0671)	Top 1-err 28.9062 (28.9062)	Top 5-err 9.3750 (9.3750)
+* Epoch: [212/300]	 Top 1-err 25.230  Top 5-err 6.680	 Test Loss 0.944
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:27:36
+Epoch: [213/300][0/391]	LR: 0.010000	Time 0.389 (0.389)	Data 0.312 (0.312)	Loss 0.4842 (0.4842)	Top 1-err 3.1250 (3.1250)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [213/300][0/196]	Time 0.323 (0.323)	Loss 0.9464 (0.9464)	Top 1-err 25.0000 (25.0000)	Top 5-err 3.9062 (3.9062)
+* Epoch: [213/300]	 Top 1-err 23.870  Top 5-err 6.050	 Test Loss 0.900
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:28:50
+Epoch: [214/300][0/391]	LR: 0.010000	Time 0.389 (0.389)	Data 0.310 (0.310)	Loss 0.4624 (0.4624)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [214/300][0/196]	Time 0.332 (0.332)	Loss 1.0421 (1.0421)	Top 1-err 25.7812 (25.7812)	Top 5-err 9.3750 (9.3750)
+* Epoch: [214/300]	 Top 1-err 25.400  Top 5-err 6.690	 Test Loss 0.946
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:30:05
+Epoch: [215/300][0/391]	LR: 0.010000	Time 0.415 (0.415)	Data 0.330 (0.330)	Loss 0.4822 (0.4822)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [215/300][0/196]	Time 0.329 (0.329)	Loss 1.0599 (1.0599)	Top 1-err 25.7812 (25.7812)	Top 5-err 7.0312 (7.0312)
+* Epoch: [215/300]	 Top 1-err 24.850  Top 5-err 6.540	 Test Loss 0.936
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:31:20
+Epoch: [216/300][0/391]	LR: 0.010000	Time 0.390 (0.390)	Data 0.311 (0.311)	Loss 0.5217 (0.5217)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [216/300][0/196]	Time 0.327 (0.327)	Loss 0.7838 (0.7838)	Top 1-err 21.0938 (21.0938)	Top 5-err 4.6875 (4.6875)
+* Epoch: [216/300]	 Top 1-err 24.930  Top 5-err 6.450	 Test Loss 0.942
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:32:34
+Epoch: [217/300][0/391]	LR: 0.010000	Time 0.406 (0.406)	Data 0.317 (0.317)	Loss 0.5064 (0.5064)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [217/300][0/196]	Time 0.325 (0.325)	Loss 1.0225 (1.0225)	Top 1-err 27.3438 (27.3438)	Top 5-err 6.2500 (6.2500)
+* Epoch: [217/300]	 Top 1-err 24.740  Top 5-err 6.420	 Test Loss 0.944
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:33:49
+Epoch: [218/300][0/391]	LR: 0.010000	Time 0.418 (0.418)	Data 0.337 (0.337)	Loss 0.4679 (0.4679)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [218/300][0/196]	Time 0.324 (0.324)	Loss 1.0530 (1.0530)	Top 1-err 32.8125 (32.8125)	Top 5-err 7.0312 (7.0312)
+* Epoch: [218/300]	 Top 1-err 23.940  Top 5-err 6.060	 Test Loss 0.892
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:35:04
+Epoch: [219/300][0/391]	LR: 0.010000	Time 0.421 (0.421)	Data 0.338 (0.338)	Loss 0.4360 (0.4360)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [219/300][0/196]	Time 0.329 (0.329)	Loss 0.7761 (0.7761)	Top 1-err 20.3125 (20.3125)	Top 5-err 3.1250 (3.1250)
+* Epoch: [219/300]	 Top 1-err 25.350  Top 5-err 6.610	 Test Loss 0.954
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:36:18
+Epoch: [220/300][0/391]	LR: 0.010000	Time 0.407 (0.407)	Data 0.325 (0.325)	Loss 0.4870 (0.4870)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [220/300][0/196]	Time 0.315 (0.315)	Loss 0.9021 (0.9021)	Top 1-err 23.4375 (23.4375)	Top 5-err 6.2500 (6.2500)
+* Epoch: [220/300]	 Top 1-err 25.370  Top 5-err 6.960	 Test Loss 0.966
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:37:33
+Epoch: [221/300][0/391]	LR: 0.010000	Time 0.400 (0.400)	Data 0.322 (0.322)	Loss 0.5053 (0.5053)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [221/300][0/196]	Time 0.318 (0.318)	Loss 0.8005 (0.8005)	Top 1-err 20.3125 (20.3125)	Top 5-err 5.4688 (5.4688)
+* Epoch: [221/300]	 Top 1-err 24.650  Top 5-err 5.910	 Test Loss 0.913
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:38:47
+Epoch: [222/300][0/391]	LR: 0.010000	Time 0.378 (0.378)	Data 0.294 (0.294)	Loss 0.4906 (0.4906)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [222/300][0/196]	Time 0.332 (0.332)	Loss 1.1634 (1.1634)	Top 1-err 28.9062 (28.9062)	Top 5-err 8.5938 (8.5938)
+* Epoch: [222/300]	 Top 1-err 25.740  Top 5-err 7.080	 Test Loss 0.980
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:40:02
+Epoch: [223/300][0/391]	LR: 0.010000	Time 0.396 (0.396)	Data 0.312 (0.312)	Loss 0.5069 (0.5069)	Top 1-err 2.3438 (2.3438)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [223/300][0/196]	Time 0.312 (0.312)	Loss 0.6891 (0.6891)	Top 1-err 19.5312 (19.5312)	Top 5-err 3.9062 (3.9062)
+* Epoch: [223/300]	 Top 1-err 24.170  Top 5-err 6.050	 Test Loss 0.907
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:41:17
+Epoch: [224/300][0/391]	LR: 0.010000	Time 0.406 (0.406)	Data 0.318 (0.318)	Loss 0.5239 (0.5239)	Top 1-err 2.3438 (2.3438)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [224/300][0/196]	Time 0.335 (0.335)	Loss 0.8825 (0.8825)	Top 1-err 21.8750 (21.8750)	Top 5-err 5.4688 (5.4688)
+* Epoch: [224/300]	 Top 1-err 24.340  Top 5-err 6.210	 Test Loss 0.921
+Current best accuracy (top-1 and 5 error): 20.43 4.57
+current os time =  2022-04-30 05:42:31
+Epoch: [225/300][0/391]	LR: 0.001000	Time 0.426 (0.426)	Data 0.345 (0.345)	Loss 0.4509 (0.4509)	Top 1-err 0.7812 (0.7812)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [225/300][0/196]	Time 0.317 (0.317)	Loss 0.7951 (0.7951)	Top 1-err 17.1875 (17.1875)	Top 5-err 4.6875 (4.6875)
+* Epoch: [225/300]	 Top 1-err 19.710  Top 5-err 4.710	 Test Loss 0.749
+Current best accuracy (top-1 and 5 error): 19.71 4.71
+current os time =  2022-04-30 05:43:47
+Epoch: [226/300][0/391]	LR: 0.001000	Time 0.395 (0.395)	Data 0.307 (0.307)	Loss 0.3265 (0.3265)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [226/300][0/196]	Time 0.335 (0.335)	Loss 0.6757 (0.6757)	Top 1-err 20.3125 (20.3125)	Top 5-err 2.3438 (2.3438)
+* Epoch: [226/300]	 Top 1-err 19.310  Top 5-err 4.490	 Test Loss 0.736
+Current best accuracy (top-1 and 5 error): 19.31 4.49
+current os time =  2022-04-30 05:45:02
+Epoch: [227/300][0/391]	LR: 0.001000	Time 0.398 (0.398)	Data 0.320 (0.320)	Loss 0.2709 (0.2709)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [227/300][0/196]	Time 0.332 (0.332)	Loss 1.0046 (1.0046)	Top 1-err 28.1250 (28.1250)	Top 5-err 6.2500 (6.2500)
+* Epoch: [227/300]	 Top 1-err 19.210  Top 5-err 4.480	 Test Loss 0.728
+Current best accuracy (top-1 and 5 error): 19.21 4.48
+current os time =  2022-04-30 05:46:17
+Epoch: [228/300][0/391]	LR: 0.001000	Time 0.425 (0.425)	Data 0.344 (0.344)	Loss 0.2428 (0.2428)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [228/300][0/196]	Time 0.338 (0.338)	Loss 0.6833 (0.6833)	Top 1-err 18.7500 (18.7500)	Top 5-err 5.4688 (5.4688)
+* Epoch: [228/300]	 Top 1-err 18.980  Top 5-err 4.550	 Test Loss 0.729
+Current best accuracy (top-1 and 5 error): 18.98 4.55
+current os time =  2022-04-30 05:47:32
+Epoch: [229/300][0/391]	LR: 0.001000	Time 0.412 (0.412)	Data 0.330 (0.330)	Loss 0.2168 (0.2168)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [229/300][0/196]	Time 0.330 (0.330)	Loss 0.6562 (0.6562)	Top 1-err 17.1875 (17.1875)	Top 5-err 4.6875 (4.6875)
+* Epoch: [229/300]	 Top 1-err 19.200  Top 5-err 4.540	 Test Loss 0.726
+Current best accuracy (top-1 and 5 error): 18.98 4.55
+current os time =  2022-04-30 05:48:47
+Epoch: [230/300][0/391]	LR: 0.001000	Time 0.391 (0.391)	Data 0.306 (0.306)	Loss 0.2077 (0.2077)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [230/300][0/196]	Time 0.325 (0.325)	Loss 0.6498 (0.6498)	Top 1-err 16.4062 (16.4062)	Top 5-err 3.1250 (3.1250)
+* Epoch: [230/300]	 Top 1-err 18.980  Top 5-err 4.460	 Test Loss 0.722
+Current best accuracy (top-1 and 5 error): 18.98 4.46
+current os time =  2022-04-30 05:50:02
+Epoch: [231/300][0/391]	LR: 0.001000	Time 0.400 (0.400)	Data 0.317 (0.317)	Loss 0.1951 (0.1951)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [231/300][0/196]	Time 0.325 (0.325)	Loss 0.7399 (0.7399)	Top 1-err 17.9688 (17.9688)	Top 5-err 6.2500 (6.2500)
+* Epoch: [231/300]	 Top 1-err 18.920  Top 5-err 4.440	 Test Loss 0.723
+Current best accuracy (top-1 and 5 error): 18.92 4.44
+current os time =  2022-04-30 05:51:17
+Epoch: [232/300][0/391]	LR: 0.001000	Time 0.411 (0.411)	Data 0.326 (0.326)	Loss 0.1911 (0.1911)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [232/300][0/196]	Time 0.329 (0.329)	Loss 0.5915 (0.5915)	Top 1-err 16.4062 (16.4062)	Top 5-err 4.6875 (4.6875)
+* Epoch: [232/300]	 Top 1-err 19.070  Top 5-err 4.370	 Test Loss 0.721
+Current best accuracy (top-1 and 5 error): 18.92 4.44
+current os time =  2022-04-30 05:52:32
+Epoch: [233/300][0/391]	LR: 0.001000	Time 0.410 (0.410)	Data 0.327 (0.327)	Loss 0.1849 (0.1849)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [233/300][0/196]	Time 0.330 (0.330)	Loss 0.8435 (0.8435)	Top 1-err 23.4375 (23.4375)	Top 5-err 7.8125 (7.8125)
+* Epoch: [233/300]	 Top 1-err 18.900  Top 5-err 4.490	 Test Loss 0.723
+Current best accuracy (top-1 and 5 error): 18.9 4.49
+current os time =  2022-04-30 05:53:47
+Epoch: [234/300][0/391]	LR: 0.001000	Time 0.429 (0.429)	Data 0.347 (0.347)	Loss 0.1860 (0.1860)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [234/300][0/196]	Time 0.325 (0.325)	Loss 0.8283 (0.8283)	Top 1-err 17.9688 (17.9688)	Top 5-err 6.2500 (6.2500)
+* Epoch: [234/300]	 Top 1-err 18.840  Top 5-err 4.400	 Test Loss 0.722
+Current best accuracy (top-1 and 5 error): 18.84 4.4
+current os time =  2022-04-30 05:55:02
+Epoch: [235/300][0/391]	LR: 0.001000	Time 0.420 (0.420)	Data 0.339 (0.339)	Loss 0.1727 (0.1727)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [235/300][0/196]	Time 0.320 (0.320)	Loss 0.7814 (0.7814)	Top 1-err 17.9688 (17.9688)	Top 5-err 4.6875 (4.6875)
+* Epoch: [235/300]	 Top 1-err 19.000  Top 5-err 4.400	 Test Loss 0.720
+Current best accuracy (top-1 and 5 error): 18.84 4.4
+current os time =  2022-04-30 05:56:17
+Epoch: [236/300][0/391]	LR: 0.001000	Time 0.410 (0.410)	Data 0.332 (0.332)	Loss 0.1693 (0.1693)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [236/300][0/196]	Time 0.317 (0.317)	Loss 0.8813 (0.8813)	Top 1-err 21.8750 (21.8750)	Top 5-err 1.5625 (1.5625)
+* Epoch: [236/300]	 Top 1-err 18.730  Top 5-err 4.450	 Test Loss 0.719
+Current best accuracy (top-1 and 5 error): 18.73 4.45
+current os time =  2022-04-30 05:57:32
+Epoch: [237/300][0/391]	LR: 0.001000	Time 0.408 (0.408)	Data 0.329 (0.329)	Loss 0.1677 (0.1677)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [237/300][0/196]	Time 0.321 (0.321)	Loss 0.7557 (0.7557)	Top 1-err 18.7500 (18.7500)	Top 5-err 3.9062 (3.9062)
+* Epoch: [237/300]	 Top 1-err 18.640  Top 5-err 4.340	 Test Loss 0.716
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 05:58:48
+Epoch: [238/300][0/391]	LR: 0.001000	Time 0.399 (0.399)	Data 0.316 (0.316)	Loss 0.1632 (0.1632)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [238/300][0/196]	Time 0.335 (0.335)	Loss 0.6174 (0.6174)	Top 1-err 15.6250 (15.6250)	Top 5-err 3.1250 (3.1250)
+* Epoch: [238/300]	 Top 1-err 18.750  Top 5-err 4.370	 Test Loss 0.719
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:00:02
+Epoch: [239/300][0/391]	LR: 0.001000	Time 0.388 (0.388)	Data 0.307 (0.307)	Loss 0.1604 (0.1604)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [239/300][0/196]	Time 0.317 (0.317)	Loss 0.8569 (0.8569)	Top 1-err 21.8750 (21.8750)	Top 5-err 7.0312 (7.0312)
+* Epoch: [239/300]	 Top 1-err 18.950  Top 5-err 4.440	 Test Loss 0.719
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:01:17
+Epoch: [240/300][0/391]	LR: 0.001000	Time 0.396 (0.396)	Data 0.315 (0.315)	Loss 0.1611 (0.1611)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [240/300][0/196]	Time 0.321 (0.321)	Loss 0.7589 (0.7589)	Top 1-err 18.7500 (18.7500)	Top 5-err 2.3438 (2.3438)
+* Epoch: [240/300]	 Top 1-err 18.870  Top 5-err 4.310	 Test Loss 0.718
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:02:31
+Epoch: [241/300][0/391]	LR: 0.001000	Time 0.392 (0.392)	Data 0.313 (0.313)	Loss 0.1597 (0.1597)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [241/300][0/196]	Time 0.326 (0.326)	Loss 0.5165 (0.5165)	Top 1-err 14.0625 (14.0625)	Top 5-err 2.3438 (2.3438)
+* Epoch: [241/300]	 Top 1-err 18.810  Top 5-err 4.400	 Test Loss 0.718
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:03:46
+Epoch: [242/300][0/391]	LR: 0.001000	Time 0.397 (0.397)	Data 0.315 (0.315)	Loss 0.1594 (0.1594)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [242/300][0/196]	Time 0.326 (0.326)	Loss 0.6894 (0.6894)	Top 1-err 18.7500 (18.7500)	Top 5-err 4.6875 (4.6875)
+* Epoch: [242/300]	 Top 1-err 18.930  Top 5-err 4.320	 Test Loss 0.718
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:05:01
+Epoch: [243/300][0/391]	LR: 0.001000	Time 0.384 (0.384)	Data 0.296 (0.296)	Loss 0.1486 (0.1486)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [243/300][0/196]	Time 0.332 (0.332)	Loss 0.6305 (0.6305)	Top 1-err 15.6250 (15.6250)	Top 5-err 3.1250 (3.1250)
+* Epoch: [243/300]	 Top 1-err 18.780  Top 5-err 4.380	 Test Loss 0.719
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:06:16
+Epoch: [244/300][0/391]	LR: 0.001000	Time 0.417 (0.417)	Data 0.334 (0.334)	Loss 0.1522 (0.1522)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [244/300][0/196]	Time 0.333 (0.333)	Loss 0.8232 (0.8232)	Top 1-err 22.6562 (22.6562)	Top 5-err 1.5625 (1.5625)
+* Epoch: [244/300]	 Top 1-err 18.710  Top 5-err 4.270	 Test Loss 0.717
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:07:30
+Epoch: [245/300][0/391]	LR: 0.001000	Time 0.424 (0.424)	Data 0.332 (0.332)	Loss 0.1477 (0.1477)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [245/300][0/196]	Time 0.331 (0.331)	Loss 0.8843 (0.8843)	Top 1-err 25.0000 (25.0000)	Top 5-err 6.2500 (6.2500)
+* Epoch: [245/300]	 Top 1-err 18.710  Top 5-err 4.420	 Test Loss 0.718
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:08:45
+Epoch: [246/300][0/391]	LR: 0.001000	Time 0.412 (0.412)	Data 0.332 (0.332)	Loss 0.1473 (0.1473)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [246/300][0/196]	Time 0.314 (0.314)	Loss 0.6847 (0.6847)	Top 1-err 14.8438 (14.8438)	Top 5-err 6.2500 (6.2500)
+* Epoch: [246/300]	 Top 1-err 18.770  Top 5-err 4.380	 Test Loss 0.717
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:10:00
+Epoch: [247/300][0/391]	LR: 0.001000	Time 0.418 (0.418)	Data 0.339 (0.339)	Loss 0.1399 (0.1399)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [247/300][0/196]	Time 0.326 (0.326)	Loss 0.6339 (0.6339)	Top 1-err 14.0625 (14.0625)	Top 5-err 3.9062 (3.9062)
+* Epoch: [247/300]	 Top 1-err 18.730  Top 5-err 4.320	 Test Loss 0.717
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:11:14
+Epoch: [248/300][0/391]	LR: 0.001000	Time 0.393 (0.393)	Data 0.308 (0.308)	Loss 0.1490 (0.1490)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [248/300][0/196]	Time 0.326 (0.326)	Loss 0.7104 (0.7104)	Top 1-err 17.9688 (17.9688)	Top 5-err 3.1250 (3.1250)
+* Epoch: [248/300]	 Top 1-err 18.720  Top 5-err 4.440	 Test Loss 0.722
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:12:29
+Epoch: [249/300][0/391]	LR: 0.001000	Time 0.394 (0.394)	Data 0.309 (0.309)	Loss 0.1478 (0.1478)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [249/300][0/196]	Time 0.329 (0.329)	Loss 1.0668 (1.0668)	Top 1-err 29.6875 (29.6875)	Top 5-err 9.3750 (9.3750)
+* Epoch: [249/300]	 Top 1-err 18.720  Top 5-err 4.250	 Test Loss 0.719
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:13:44
+Epoch: [250/300][0/391]	LR: 0.001000	Time 0.407 (0.407)	Data 0.329 (0.329)	Loss 0.1506 (0.1506)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [250/300][0/196]	Time 0.323 (0.323)	Loss 0.4836 (0.4836)	Top 1-err 14.0625 (14.0625)	Top 5-err 2.3438 (2.3438)
+* Epoch: [250/300]	 Top 1-err 18.800  Top 5-err 4.310	 Test Loss 0.719
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:14:58
+Epoch: [251/300][0/391]	LR: 0.001000	Time 0.389 (0.389)	Data 0.307 (0.307)	Loss 0.1439 (0.1439)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [251/300][0/196]	Time 0.333 (0.333)	Loss 0.7008 (0.7008)	Top 1-err 20.3125 (20.3125)	Top 5-err 3.1250 (3.1250)
+* Epoch: [251/300]	 Top 1-err 18.710  Top 5-err 4.340	 Test Loss 0.718
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:16:13
+Epoch: [252/300][0/391]	LR: 0.001000	Time 0.380 (0.380)	Data 0.298 (0.298)	Loss 0.1450 (0.1450)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [252/300][0/196]	Time 0.324 (0.324)	Loss 0.6957 (0.6957)	Top 1-err 21.0938 (21.0938)	Top 5-err 3.9062 (3.9062)
+* Epoch: [252/300]	 Top 1-err 18.880  Top 5-err 4.410	 Test Loss 0.725
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:17:28
+Epoch: [253/300][0/391]	LR: 0.001000	Time 0.422 (0.422)	Data 0.344 (0.344)	Loss 0.1458 (0.1458)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [253/300][0/196]	Time 0.313 (0.313)	Loss 0.7185 (0.7185)	Top 1-err 17.1875 (17.1875)	Top 5-err 4.6875 (4.6875)
+* Epoch: [253/300]	 Top 1-err 18.900  Top 5-err 4.350	 Test Loss 0.720
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:18:42
+Epoch: [254/300][0/391]	LR: 0.001000	Time 0.418 (0.418)	Data 0.339 (0.339)	Loss 0.1444 (0.1444)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [254/300][0/196]	Time 0.327 (0.327)	Loss 0.5997 (0.5997)	Top 1-err 17.1875 (17.1875)	Top 5-err 3.9062 (3.9062)
+* Epoch: [254/300]	 Top 1-err 18.680  Top 5-err 4.350	 Test Loss 0.722
+Current best accuracy (top-1 and 5 error): 18.64 4.34
+current os time =  2022-04-30 06:19:57
+Epoch: [255/300][0/391]	LR: 0.001000	Time 0.410 (0.410)	Data 0.327 (0.327)	Loss 0.1367 (0.1367)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [255/300][0/196]	Time 0.316 (0.316)	Loss 0.8861 (0.8861)	Top 1-err 24.2188 (24.2188)	Top 5-err 3.9062 (3.9062)
+* Epoch: [255/300]	 Top 1-err 18.620  Top 5-err 4.400	 Test Loss 0.719
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:21:12
+Epoch: [256/300][0/391]	LR: 0.001000	Time 0.418 (0.418)	Data 0.336 (0.336)	Loss 0.1385 (0.1385)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [256/300][0/196]	Time 0.316 (0.316)	Loss 0.5880 (0.5880)	Top 1-err 13.2812 (13.2812)	Top 5-err 4.6875 (4.6875)
+* Epoch: [256/300]	 Top 1-err 18.850  Top 5-err 4.270	 Test Loss 0.724
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:22:27
+Epoch: [257/300][0/391]	LR: 0.001000	Time 0.408 (0.408)	Data 0.325 (0.325)	Loss 0.1383 (0.1383)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [257/300][0/196]	Time 0.324 (0.324)	Loss 0.9565 (0.9565)	Top 1-err 24.2188 (24.2188)	Top 5-err 8.5938 (8.5938)
+* Epoch: [257/300]	 Top 1-err 18.640  Top 5-err 4.360	 Test Loss 0.723
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:23:41
+Epoch: [258/300][0/391]	LR: 0.001000	Time 0.409 (0.409)	Data 0.326 (0.326)	Loss 0.1448 (0.1448)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [258/300][0/196]	Time 0.327 (0.327)	Loss 0.6227 (0.6227)	Top 1-err 15.6250 (15.6250)	Top 5-err 3.1250 (3.1250)
+* Epoch: [258/300]	 Top 1-err 18.960  Top 5-err 4.250	 Test Loss 0.719
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:24:56
+Epoch: [259/300][0/391]	LR: 0.001000	Time 0.397 (0.397)	Data 0.315 (0.315)	Loss 0.1347 (0.1347)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [259/300][0/196]	Time 0.321 (0.321)	Loss 0.6969 (0.6969)	Top 1-err 18.7500 (18.7500)	Top 5-err 3.9062 (3.9062)
+* Epoch: [259/300]	 Top 1-err 18.740  Top 5-err 4.360	 Test Loss 0.722
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:26:11
+Epoch: [260/300][0/391]	LR: 0.001000	Time 0.408 (0.408)	Data 0.327 (0.327)	Loss 0.1395 (0.1395)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [260/300][0/196]	Time 0.322 (0.322)	Loss 0.9193 (0.9193)	Top 1-err 21.8750 (21.8750)	Top 5-err 5.4688 (5.4688)
+* Epoch: [260/300]	 Top 1-err 18.720  Top 5-err 4.330	 Test Loss 0.722
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:27:25
+Epoch: [261/300][0/391]	LR: 0.001000	Time 0.398 (0.398)	Data 0.314 (0.314)	Loss 0.1399 (0.1399)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [261/300][0/196]	Time 0.319 (0.319)	Loss 0.6855 (0.6855)	Top 1-err 16.4062 (16.4062)	Top 5-err 5.4688 (5.4688)
+* Epoch: [261/300]	 Top 1-err 18.980  Top 5-err 4.260	 Test Loss 0.723
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:28:40
+Epoch: [262/300][0/391]	LR: 0.001000	Time 0.410 (0.410)	Data 0.331 (0.331)	Loss 0.1376 (0.1376)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [262/300][0/196]	Time 0.323 (0.323)	Loss 0.9298 (0.9298)	Top 1-err 22.6562 (22.6562)	Top 5-err 2.3438 (2.3438)
+* Epoch: [262/300]	 Top 1-err 18.820  Top 5-err 4.330	 Test Loss 0.723
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:29:55
+Epoch: [263/300][0/391]	LR: 0.001000	Time 0.418 (0.418)	Data 0.335 (0.335)	Loss 0.1461 (0.1461)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [263/300][0/196]	Time 0.328 (0.328)	Loss 0.7786 (0.7786)	Top 1-err 18.7500 (18.7500)	Top 5-err 4.6875 (4.6875)
+* Epoch: [263/300]	 Top 1-err 18.830  Top 5-err 4.390	 Test Loss 0.724
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:31:09
+Epoch: [264/300][0/391]	LR: 0.001000	Time 0.416 (0.416)	Data 0.339 (0.339)	Loss 0.1351 (0.1351)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [264/300][0/196]	Time 0.329 (0.329)	Loss 0.9717 (0.9717)	Top 1-err 22.6562 (22.6562)	Top 5-err 3.1250 (3.1250)
+* Epoch: [264/300]	 Top 1-err 18.850  Top 5-err 4.330	 Test Loss 0.727
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:32:24
+Epoch: [265/300][0/391]	LR: 0.001000	Time 0.396 (0.396)	Data 0.313 (0.313)	Loss 0.1345 (0.1345)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [265/300][0/196]	Time 0.325 (0.325)	Loss 0.6593 (0.6593)	Top 1-err 18.7500 (18.7500)	Top 5-err 3.1250 (3.1250)
+* Epoch: [265/300]	 Top 1-err 18.860  Top 5-err 4.300	 Test Loss 0.722
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:33:39
+Epoch: [266/300][0/391]	LR: 0.001000	Time 0.396 (0.396)	Data 0.317 (0.317)	Loss 0.1313 (0.1313)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [266/300][0/196]	Time 0.319 (0.319)	Loss 0.6058 (0.6058)	Top 1-err 16.4062 (16.4062)	Top 5-err 3.9062 (3.9062)
+* Epoch: [266/300]	 Top 1-err 18.680  Top 5-err 4.380	 Test Loss 0.720
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:34:53
+Epoch: [267/300][0/391]	LR: 0.001000	Time 0.413 (0.413)	Data 0.327 (0.327)	Loss 0.1372 (0.1372)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [267/300][0/196]	Time 0.318 (0.318)	Loss 0.7672 (0.7672)	Top 1-err 19.5312 (19.5312)	Top 5-err 3.9062 (3.9062)
+* Epoch: [267/300]	 Top 1-err 18.810  Top 5-err 4.300	 Test Loss 0.725
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:36:08
+Epoch: [268/300][0/391]	LR: 0.001000	Time 0.403 (0.403)	Data 0.319 (0.319)	Loss 0.1344 (0.1344)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [268/300][0/196]	Time 0.329 (0.329)	Loss 0.6768 (0.6768)	Top 1-err 15.6250 (15.6250)	Top 5-err 3.1250 (3.1250)
+* Epoch: [268/300]	 Top 1-err 18.800  Top 5-err 4.310	 Test Loss 0.725
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:37:23
+Epoch: [269/300][0/391]	LR: 0.001000	Time 0.411 (0.411)	Data 0.333 (0.333)	Loss 0.1409 (0.1409)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [269/300][0/196]	Time 0.327 (0.327)	Loss 0.6148 (0.6148)	Top 1-err 15.6250 (15.6250)	Top 5-err 3.1250 (3.1250)
+* Epoch: [269/300]	 Top 1-err 18.670  Top 5-err 4.360	 Test Loss 0.724
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:38:37
+Epoch: [270/300][0/391]	LR: 0.001000	Time 0.388 (0.388)	Data 0.305 (0.305)	Loss 0.1357 (0.1357)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [270/300][0/196]	Time 0.331 (0.331)	Loss 0.7882 (0.7882)	Top 1-err 21.0938 (21.0938)	Top 5-err 7.8125 (7.8125)
+* Epoch: [270/300]	 Top 1-err 18.730  Top 5-err 4.260	 Test Loss 0.725
+Current best accuracy (top-1 and 5 error): 18.62 4.4
+current os time =  2022-04-30 06:39:52
+Epoch: [271/300][0/391]	LR: 0.001000	Time 0.415 (0.415)	Data 0.332 (0.332)	Loss 0.1322 (0.1322)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [271/300][0/196]	Time 0.324 (0.324)	Loss 0.7968 (0.7968)	Top 1-err 20.3125 (20.3125)	Top 5-err 3.9062 (3.9062)
+* Epoch: [271/300]	 Top 1-err 18.560  Top 5-err 4.390	 Test Loss 0.723
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:41:07
+Epoch: [272/300][0/391]	LR: 0.001000	Time 0.408 (0.408)	Data 0.329 (0.329)	Loss 0.1318 (0.1318)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [272/300][0/196]	Time 0.326 (0.326)	Loss 0.6955 (0.6955)	Top 1-err 16.4062 (16.4062)	Top 5-err 3.9062 (3.9062)
+* Epoch: [272/300]	 Top 1-err 18.740  Top 5-err 4.350	 Test Loss 0.721
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:42:22
+Epoch: [273/300][0/391]	LR: 0.001000	Time 0.429 (0.429)	Data 0.345 (0.345)	Loss 0.1366 (0.1366)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [273/300][0/196]	Time 0.329 (0.329)	Loss 0.5630 (0.5630)	Top 1-err 12.5000 (12.5000)	Top 5-err 3.1250 (3.1250)
+* Epoch: [273/300]	 Top 1-err 18.710  Top 5-err 4.270	 Test Loss 0.723
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:43:37
+Epoch: [274/300][0/391]	LR: 0.001000	Time 0.414 (0.414)	Data 0.333 (0.333)	Loss 0.1383 (0.1383)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [274/300][0/196]	Time 0.337 (0.337)	Loss 0.7154 (0.7154)	Top 1-err 16.4062 (16.4062)	Top 5-err 7.0312 (7.0312)
+* Epoch: [274/300]	 Top 1-err 18.770  Top 5-err 4.320	 Test Loss 0.726
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:44:51
+Epoch: [275/300][0/391]	LR: 0.001000	Time 0.402 (0.402)	Data 0.318 (0.318)	Loss 0.1325 (0.1325)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [275/300][0/196]	Time 0.326 (0.326)	Loss 0.7456 (0.7456)	Top 1-err 20.3125 (20.3125)	Top 5-err 5.4688 (5.4688)
+* Epoch: [275/300]	 Top 1-err 18.630  Top 5-err 4.410	 Test Loss 0.724
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:46:06
+Epoch: [276/300][0/391]	LR: 0.001000	Time 0.429 (0.429)	Data 0.342 (0.342)	Loss 0.1333 (0.1333)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [276/300][0/196]	Time 0.326 (0.326)	Loss 0.8957 (0.8957)	Top 1-err 24.2188 (24.2188)	Top 5-err 3.1250 (3.1250)
+* Epoch: [276/300]	 Top 1-err 18.580  Top 5-err 4.360	 Test Loss 0.725
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:47:21
+Epoch: [277/300][0/391]	LR: 0.001000	Time 0.409 (0.409)	Data 0.327 (0.327)	Loss 0.1322 (0.1322)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [277/300][0/196]	Time 0.333 (0.333)	Loss 0.5811 (0.5811)	Top 1-err 14.0625 (14.0625)	Top 5-err 1.5625 (1.5625)
+* Epoch: [277/300]	 Top 1-err 18.640  Top 5-err 4.320	 Test Loss 0.726
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:48:35
+Epoch: [278/300][0/391]	LR: 0.001000	Time 0.416 (0.416)	Data 0.323 (0.323)	Loss 0.1312 (0.1312)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [278/300][0/196]	Time 0.323 (0.323)	Loss 0.8682 (0.8682)	Top 1-err 19.5312 (19.5312)	Top 5-err 7.8125 (7.8125)
+* Epoch: [278/300]	 Top 1-err 18.690  Top 5-err 4.430	 Test Loss 0.727
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:49:50
+Epoch: [279/300][0/391]	LR: 0.001000	Time 0.394 (0.394)	Data 0.313 (0.313)	Loss 0.1418 (0.1418)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [279/300][0/196]	Time 0.317 (0.317)	Loss 0.8925 (0.8925)	Top 1-err 21.8750 (21.8750)	Top 5-err 7.0312 (7.0312)
+* Epoch: [279/300]	 Top 1-err 18.910  Top 5-err 4.330	 Test Loss 0.729
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:51:05
+Epoch: [280/300][0/391]	LR: 0.001000	Time 0.391 (0.391)	Data 0.309 (0.309)	Loss 0.1262 (0.1262)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [280/300][0/196]	Time 0.326 (0.326)	Loss 0.7110 (0.7110)	Top 1-err 17.9688 (17.9688)	Top 5-err 3.1250 (3.1250)
+* Epoch: [280/300]	 Top 1-err 18.670  Top 5-err 4.370	 Test Loss 0.728
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:52:19
+Epoch: [281/300][0/391]	LR: 0.001000	Time 0.387 (0.387)	Data 0.306 (0.306)	Loss 0.1304 (0.1304)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [281/300][0/196]	Time 0.327 (0.327)	Loss 0.5805 (0.5805)	Top 1-err 17.1875 (17.1875)	Top 5-err 1.5625 (1.5625)
+* Epoch: [281/300]	 Top 1-err 18.780  Top 5-err 4.450	 Test Loss 0.729
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:53:34
+Epoch: [282/300][0/391]	LR: 0.001000	Time 0.389 (0.389)	Data 0.303 (0.303)	Loss 0.1284 (0.1284)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [282/300][0/196]	Time 0.335 (0.335)	Loss 0.6414 (0.6414)	Top 1-err 14.0625 (14.0625)	Top 5-err 4.6875 (4.6875)
+* Epoch: [282/300]	 Top 1-err 18.730  Top 5-err 4.360	 Test Loss 0.728
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:54:49
+Epoch: [283/300][0/391]	LR: 0.001000	Time 0.386 (0.386)	Data 0.306 (0.306)	Loss 0.1291 (0.1291)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [283/300][0/196]	Time 0.320 (0.320)	Loss 0.5999 (0.5999)	Top 1-err 13.2812 (13.2812)	Top 5-err 3.9062 (3.9062)
+* Epoch: [283/300]	 Top 1-err 18.900  Top 5-err 4.390	 Test Loss 0.731
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:56:03
+Epoch: [284/300][0/391]	LR: 0.001000	Time 0.394 (0.394)	Data 0.310 (0.310)	Loss 0.1297 (0.1297)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [284/300][0/196]	Time 0.322 (0.322)	Loss 0.6577 (0.6577)	Top 1-err 16.4062 (16.4062)	Top 5-err 4.6875 (4.6875)
+* Epoch: [284/300]	 Top 1-err 18.640  Top 5-err 4.460	 Test Loss 0.730
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:57:18
+Epoch: [285/300][0/391]	LR: 0.001000	Time 0.384 (0.384)	Data 0.301 (0.301)	Loss 0.1312 (0.1312)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [285/300][0/196]	Time 0.328 (0.328)	Loss 0.5476 (0.5476)	Top 1-err 13.2812 (13.2812)	Top 5-err 2.3438 (2.3438)
+* Epoch: [285/300]	 Top 1-err 18.640  Top 5-err 4.520	 Test Loss 0.731
+Current best accuracy (top-1 and 5 error): 18.56 4.39
+current os time =  2022-04-30 06:58:33
+Epoch: [286/300][0/391]	LR: 0.001000	Time 0.392 (0.392)	Data 0.308 (0.308)	Loss 0.1282 (0.1282)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [286/300][0/196]	Time 0.322 (0.322)	Loss 0.8258 (0.8258)	Top 1-err 21.0938 (21.0938)	Top 5-err 7.0312 (7.0312)
+* Epoch: [286/300]	 Top 1-err 18.560  Top 5-err 4.460	 Test Loss 0.729
+Current best accuracy (top-1 and 5 error): 18.56 4.46
+current os time =  2022-04-30 06:59:48
+Epoch: [287/300][0/391]	LR: 0.001000	Time 0.392 (0.392)	Data 0.312 (0.312)	Loss 0.1343 (0.1343)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [287/300][0/196]	Time 0.327 (0.327)	Loss 0.6688 (0.6688)	Top 1-err 17.1875 (17.1875)	Top 5-err 3.1250 (3.1250)
+* Epoch: [287/300]	 Top 1-err 18.700  Top 5-err 4.360	 Test Loss 0.728
+Current best accuracy (top-1 and 5 error): 18.56 4.46
+current os time =  2022-04-30 07:01:03
+Epoch: [288/300][0/391]	LR: 0.001000	Time 0.371 (0.371)	Data 0.289 (0.289)	Loss 0.1315 (0.1315)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [288/300][0/196]	Time 0.333 (0.333)	Loss 0.7731 (0.7731)	Top 1-err 19.5312 (19.5312)	Top 5-err 7.8125 (7.8125)
+* Epoch: [288/300]	 Top 1-err 18.780  Top 5-err 4.480	 Test Loss 0.730
+Current best accuracy (top-1 and 5 error): 18.56 4.46
+current os time =  2022-04-30 07:02:17
+Epoch: [289/300][0/391]	LR: 0.001000	Time 0.403 (0.403)	Data 0.319 (0.319)	Loss 0.1288 (0.1288)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [289/300][0/196]	Time 0.331 (0.331)	Loss 0.9970 (0.9970)	Top 1-err 22.6562 (22.6562)	Top 5-err 5.4688 (5.4688)
+* Epoch: [289/300]	 Top 1-err 18.550  Top 5-err 4.400	 Test Loss 0.725
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:03:32
+Epoch: [290/300][0/391]	LR: 0.001000	Time 0.414 (0.414)	Data 0.337 (0.337)	Loss 0.1321 (0.1321)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [290/300][0/196]	Time 0.339 (0.339)	Loss 0.7556 (0.7556)	Top 1-err 20.3125 (20.3125)	Top 5-err 6.2500 (6.2500)
+* Epoch: [290/300]	 Top 1-err 18.680  Top 5-err 4.450	 Test Loss 0.731
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:04:47
+Epoch: [291/300][0/391]	LR: 0.001000	Time 0.394 (0.394)	Data 0.312 (0.312)	Loss 0.1303 (0.1303)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [291/300][0/196]	Time 0.336 (0.336)	Loss 0.7088 (0.7088)	Top 1-err 16.4062 (16.4062)	Top 5-err 5.4688 (5.4688)
+* Epoch: [291/300]	 Top 1-err 18.630  Top 5-err 4.540	 Test Loss 0.735
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:06:02
+Epoch: [292/300][0/391]	LR: 0.001000	Time 0.407 (0.407)	Data 0.327 (0.327)	Loss 0.1304 (0.1304)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [292/300][0/196]	Time 0.332 (0.332)	Loss 0.7040 (0.7040)	Top 1-err 17.9688 (17.9688)	Top 5-err 4.6875 (4.6875)
+* Epoch: [292/300]	 Top 1-err 18.680  Top 5-err 4.390	 Test Loss 0.731
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:07:16
+Epoch: [293/300][0/391]	LR: 0.001000	Time 0.372 (0.372)	Data 0.292 (0.292)	Loss 0.1322 (0.1322)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [293/300][0/196]	Time 0.343 (0.343)	Loss 0.5514 (0.5514)	Top 1-err 15.6250 (15.6250)	Top 5-err 3.1250 (3.1250)
+* Epoch: [293/300]	 Top 1-err 18.680  Top 5-err 4.360	 Test Loss 0.731
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:08:31
+Epoch: [294/300][0/391]	LR: 0.001000	Time 0.422 (0.422)	Data 0.343 (0.343)	Loss 0.1309 (0.1309)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [294/300][0/196]	Time 0.322 (0.322)	Loss 0.6414 (0.6414)	Top 1-err 16.4062 (16.4062)	Top 5-err 3.9062 (3.9062)
+* Epoch: [294/300]	 Top 1-err 18.750  Top 5-err 4.490	 Test Loss 0.735
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:09:46
+Epoch: [295/300][0/391]	LR: 0.001000	Time 0.418 (0.418)	Data 0.340 (0.340)	Loss 0.1300 (0.1300)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [295/300][0/196]	Time 0.324 (0.324)	Loss 0.6391 (0.6391)	Top 1-err 18.7500 (18.7500)	Top 5-err 6.2500 (6.2500)
+* Epoch: [295/300]	 Top 1-err 18.720  Top 5-err 4.470	 Test Loss 0.730
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:11:00
+Epoch: [296/300][0/391]	LR: 0.001000	Time 0.399 (0.399)	Data 0.318 (0.318)	Loss 0.1358 (0.1358)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [296/300][0/196]	Time 0.322 (0.322)	Loss 0.8461 (0.8461)	Top 1-err 22.6562 (22.6562)	Top 5-err 3.1250 (3.1250)
+* Epoch: [296/300]	 Top 1-err 18.990  Top 5-err 4.400	 Test Loss 0.733
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:12:15
+Epoch: [297/300][0/391]	LR: 0.001000	Time 0.389 (0.389)	Data 0.299 (0.299)	Loss 0.1297 (0.1297)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [297/300][0/196]	Time 0.325 (0.325)	Loss 0.8180 (0.8180)	Top 1-err 21.8750 (21.8750)	Top 5-err 3.9062 (3.9062)
+* Epoch: [297/300]	 Top 1-err 18.760  Top 5-err 4.350	 Test Loss 0.735
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:13:29
+Epoch: [298/300][0/391]	LR: 0.001000	Time 0.401 (0.401)	Data 0.318 (0.318)	Loss 0.1331 (0.1331)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [298/300][0/196]	Time 0.331 (0.331)	Loss 0.6221 (0.6221)	Top 1-err 13.2812 (13.2812)	Top 5-err 1.5625 (1.5625)
+* Epoch: [298/300]	 Top 1-err 18.690  Top 5-err 4.360	 Test Loss 0.736
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+current os time =  2022-04-30 07:14:44
+Epoch: [299/300][0/391]	LR: 0.001000	Time 0.405 (0.405)	Data 0.318 (0.318)	Loss 0.1366 (0.1366)	Top 1-err 0.0000 (0.0000)	Top 5-err 0.0000 (0.0000)
+Test (on val set): [299/300][0/196]	Time 0.320 (0.320)	Loss 0.7413 (0.7413)	Top 1-err 18.7500 (18.7500)	Top 5-err 5.4688 (5.4688)
+* Epoch: [299/300]	 Top 1-err 18.780  Top 5-err 4.430	 Test Loss 0.731
+Current best accuracy (top-1 and 5 error): 18.55 4.4
+Best accuracy (top-1 and 5 error): 18.55 4.4
+method = ols, expname = resnext34-2_testcode_ols
